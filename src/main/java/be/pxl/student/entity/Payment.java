@@ -16,6 +16,10 @@ public class Payment {
         this.detail = detail;
     }
 
+    public Payment() {
+
+    }
+
     public LocalDate getDate() {
         return date;
     }
