@@ -1,11 +1,17 @@
 package be.pxl.student.util;
 
+import java.nio.file.Path;
+
 /**
  * Util class to import csv file
  */
 public class BudgetPlannerImporter {
+    private Path path;
 
-    //TODO: Create constructor with path to file
+    public BudgetPlannerImporter(Path pathFileToRead) { //src/main/resources/account_payments.csv
+        this.path = pathFileToRead;
+    }
+
 
     //TODO: Read lines from file.
         //TODO: Per line create an Account and a Payment object
