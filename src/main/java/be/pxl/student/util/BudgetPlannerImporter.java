@@ -13,6 +13,7 @@ import java.util.ArrayList;
 import java.util.Formatter;
 import java.util.List;
 import java.util.Locale;
+import java.util.stream.Collectors;
 
 /**
  * Util class to import csv file
@@ -36,6 +37,8 @@ public class BudgetPlannerImporter {
 
                 if (account == null) {
                     account = getAccount(line);
+                    Payment newPayment = getPayment(line);
+                    payments.add(newPayment);
                 } else {
                     Payment newPayment = getPayment(line);
                     payments.add(newPayment);
@@ -59,14 +62,14 @@ public class BudgetPlannerImporter {
 
         //TODO: fix LocalDate format
         //LocalDate date = LocalDate.parse(lines[3]);
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("EEE MMM dd hh:mm:ss Z yyyy", Locale.ENGLISH); //Tue Feb 18 04:15:12 CET 2020
+        //DateTimeFormatter dtf = DateTimeFormatter.ofPattern("EEE MMM dd hh:mm:ss Z yyyy", Locale.ENGLISH); //Tue Feb 18 04:15:12 CET 2020
         //DateTimeFormatter dtf = DateTimeFormatter.ISO_LOCAL_DATE;
-        LocalDate date = LocalDate.parse(lines[3], dtf);
+        //LocalDate date = LocalDate.parse(lines[3], dtf);
         float amount = Float.parseFloat(lines[4]);
         String currency = lines[5];
         String detail = lines[6];
 
-        payment.setDate(date);
+        //payment.setDate(date);
         payment.setAmount(amount);
         payment.setCurrency(currency);
         payment.setDetail(detail);
@@ -87,5 +90,13 @@ public class BudgetPlannerImporter {
     //TODO: Use log4j to print the Account toString to an output.log file
 
     //TODO: Use log4j to print errors and warnings
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "IBAN='" + account.getIBAN() + '\'' +
+                ", name='" + account.getName() + '\'' +
+                ", payments=[" + account.getPayments().stream().map(Payment::toString).collect(Collectors.joining(",")) + "]}";
+    }
 
 }
