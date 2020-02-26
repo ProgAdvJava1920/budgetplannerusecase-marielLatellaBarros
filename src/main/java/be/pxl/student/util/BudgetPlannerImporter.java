@@ -2,31 +2,26 @@ package be.pxl.student.util;
 
 import be.pxl.student.entity.Account;
 import be.pxl.student.entity.Payment;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
+import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Formatter;
 import java.util.List;
-import java.util.Locale;
 import java.util.stream.Collectors;
 
 /**
  * Util class to import csv file
  */
 public class BudgetPlannerImporter {
-    private Path path;
     private Account account;
 
-    public BudgetPlannerImporter(Path pathFileToRead) { //src/main/resources/account_payments.csv
-        this.path = pathFileToRead;
+    public BudgetPlannerImporter() { //src/main/resources/account_payments.csv
     }
 
-    public List<Payment> getPayments(){
+    public List<Payment> readFile(Path pathFileToRead){
+        Path path = Paths.get(String.valueOf(pathFileToRead));
         List<Payment> payments = new ArrayList<>();
 
         try (BufferedReader reader = Files.newBufferedReader(path)) {
@@ -34,7 +29,6 @@ public class BudgetPlannerImporter {
             String line = null;
 
             while ((line = reader.readLine()) != null ) {
-
                 if (account == null) {
                     account = getAccount(line);
                     Payment newPayment = getPayment(line);
@@ -62,7 +56,7 @@ public class BudgetPlannerImporter {
 
         //TODO: fix LocalDate format
         //LocalDate date = LocalDate.parse(lines[3]);
-        //DateTimeFormatter dtf = DateTimeFormatter.ofPattern("EEE MMM dd hh:mm:ss Z yyyy", Locale.ENGLISH); //Tue Feb 18 04:15:12 CET 2020
+        //DateTimeFormatter dtf = DateTimeFormatter.ofPattern("E MMM dd hh:mm:ss zzz yyyy", Locale.ENGLISH); //Tue Feb 18 04:15:12 CET 2020
         //DateTimeFormatter dtf = DateTimeFormatter.ISO_LOCAL_DATE;
         //LocalDate date = LocalDate.parse(lines[3], dtf);
         float amount = Float.parseFloat(lines[4]);
