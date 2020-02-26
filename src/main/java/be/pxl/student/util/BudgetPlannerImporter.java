@@ -50,7 +50,7 @@ public class BudgetPlannerImporter {
         account.setPayments(payments);
     }
 
-    private Payment getPayment(String line) {
+    public Payment getPayment(String line) {
         Payment payment= new Payment();
         String[] lines = line.split(",");
 
