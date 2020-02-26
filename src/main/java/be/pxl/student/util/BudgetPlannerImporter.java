@@ -71,7 +71,7 @@ public class BudgetPlannerImporter {
         return payment;
     }
 
-    private Account getAccount(String line) {
+    public Account getAccount(String line) {
         String[] lines = line.split(",");
         account = new Account();
         account.setIBAN(lines[1]);
