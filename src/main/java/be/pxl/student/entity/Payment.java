@@ -1,6 +1,7 @@
 package be.pxl.student.entity;
 
 import javax.persistence.*;
+import java.util.Date;
 import java.time.LocalDate;
 
 @Entity
@@ -9,26 +10,30 @@ public class Payment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int Id;
-    private LocalDate date;
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date date;
     private float amount;
     @Column(length=45)
     private String currency;
     private String detail;
 
+    @JoinColumn(name = "accountId")
     @ManyToOne
-    @Column(nullable = false)
-    private Account accountId;
+    //@Column(nullable = false)
+    private Account account;
+
+    @JoinColumn(name = "counterAccountId")
     @ManyToOne
-    @Column(nullable = false)
-    private Account counterAccountId;
+    //@Column(nullable = false)
+    private Account counterAccount;
+
+    @JoinColumn(name = "labelId")
     @ManyToOne
-    private Label labelId;
+    private Label label;
 
+    public Payment() { }
 
-    public Payment() {
-    }
-
-    public Payment(LocalDate date, float amount, String currency, String detail) {
+    public Payment(Date date, float amount, String currency, String detail) {
         this.date = date;
         this.amount = amount;
         this.currency = currency;
@@ -37,10 +42,10 @@ public class Payment {
 
     public int getId() { return Id; }
 
-    public LocalDate getDate() {
+    public Date getDate() {
         return date;
     }
-    public void setDate(LocalDate date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 
@@ -64,6 +69,7 @@ public class Payment {
     public void setDetail(String detail) {
         this.detail = detail;
     }
+
 
     @Override
     public String toString() {

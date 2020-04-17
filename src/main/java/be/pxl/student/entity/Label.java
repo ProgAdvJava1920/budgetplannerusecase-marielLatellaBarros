@@ -12,7 +12,7 @@ public class Label {
     private String name;
     private String description;
 
-    @OneToMany(mappedBy = "labelId")
+    @OneToMany(mappedBy = "label")
     private List<Payment> payments;
 
     public int getId() { return id; }
@@ -22,6 +22,9 @@ public class Label {
 
     public String getDescription() { return description; }
     public void setDescription(String description) { this.description = description; }
+
+    public List<Payment> getPayments() { return payments; }
+    public void setPayments(List<Payment> payments) { this.payments = payments; }
 
     @Override
     public String toString() {
