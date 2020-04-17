@@ -1,6 +1,6 @@
 package be.pxl.student.dao;
 
 public class AccountException extends Exception{
-    public AccountException(){
+    public AccountException(Exception e){
     }
 }

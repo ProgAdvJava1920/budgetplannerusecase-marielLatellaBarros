@@ -4,8 +4,13 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@NamedQueries(
-@NamedQuery(name="getAllAccounts", query = "SELECT c FROM Account c"))
+@NamedQueries({
+        @NamedQuery(name="getAllAccounts",
+                query = "SELECT a FROM Account a"),
+        @NamedQuery(name="getById",
+                query = "SELECT a FROM Account a WHERE a.id = :id"),
+}
+        )
 public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
