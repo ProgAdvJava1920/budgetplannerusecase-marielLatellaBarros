@@ -4,6 +4,7 @@ import java.time.LocalDate;
 
 public class Payment {
 
+    private int Id;
     private LocalDate date;
     private float amount;
     private String currency;
@@ -18,6 +19,14 @@ public class Payment {
 
     public Payment() {
 
+    }
+
+    public int getId() {
+        return Id;
+    }
+
+    public void setId(int id) {
+        Id = id;
     }
 
     public LocalDate getDate() {
