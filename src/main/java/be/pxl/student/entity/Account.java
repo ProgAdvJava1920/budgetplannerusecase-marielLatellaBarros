@@ -9,8 +9,7 @@ import java.util.List;
                 query = "SELECT a FROM Account a"),
         @NamedQuery(name="getById",
                 query = "SELECT a FROM Account a WHERE a.id = :id"),
-}
-        )
+})
 public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
