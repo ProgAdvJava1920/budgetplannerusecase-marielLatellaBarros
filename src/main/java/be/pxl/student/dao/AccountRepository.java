@@ -4,7 +4,7 @@ import be.pxl.student.entity.Account;
 
 import java.util.List;
 
-public interface AccountDAO {
+public interface AccountRepository {
 
     Account create(Account account) throws AccountException;
 

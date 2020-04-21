@@ -18,11 +18,11 @@ public class BudgetPlannerImporter {
     private List<Payment> payments;
     private final Path path;
 
-    public BudgetPlannerImporter(Path pathToRead) throws IOException { //src/main/resources/account_payments.csv
+    public BudgetPlannerImporter(Path pathToRead) { //src/main/resources/account_payments.csv
     this.path = pathToRead;
     }
 
-    public List<Payment> getPayments() {
+    public List<Payment> createAccountAndPayments() {
         convertDataToObjects();
         return payments;
     }
@@ -53,6 +53,7 @@ public class BudgetPlannerImporter {
             account.setPayments(payments);
 
         } catch (IOException e) {
+            System.out.println(e.getMessage());
             e.printStackTrace();
         }
     }
