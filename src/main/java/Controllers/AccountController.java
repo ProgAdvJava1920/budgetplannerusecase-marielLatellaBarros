@@ -28,24 +28,21 @@ public class AccountController {
     public Response createAccount(AccountDTO accountDTO) {
         EntityManager em = EntityManagerUtil.createEntityManager();
 
-        if (dtoIsInvalid(accountDTO)) {
-            LOGGER.warn("Name or IBAN is empty");
-            ErrorAccountResponse er = new ErrorAccountResponse("The name or iban fields cannot be empty");
-            return Response.status(Response.Status.BAD_REQUEST).entity(er).build();
-        } else {
             try {
                 AccountDAO accountDAO = new AccountDAOImpl(em);
                 Account accountFoundByName = accountDAO.getByName(accountDTO.getName());
                 Account accountFoundByIban = accountDAO.getByIban(accountDTO.getIBAN());
 
-                if (accountFoundByName != null) {
-                    LOGGER.warn("There already exists an account with name: {}", accountDTO.getName());
-                    ErrorAccountResponse er = new ErrorAccountResponse("There already exists an account with name " + accountDTO.getName());
+                if (accountFoundByIban.getIban().equalsIgnoreCase(accountDTO.getIBAN()) &&
+                        (accountFoundByIban.getName() == null) || accountFoundByIban.getName().equalsIgnoreCase("")) {
+                    LOGGER.warn("Fill in the account holder name for this iban {}", accountDTO.getIBAN());
+                    ErrorAccountResponse er = new ErrorAccountResponse("Fill in the account holder name for this iban: " +
+                            accountDTO.getIBAN());
                     return Response.status(Response.Status.BAD_REQUEST).entity(er).build();
 
-                } else if (accountFoundByIban != null) {
-                    LOGGER.warn("There already exists an account with iban: {}", accountDTO.getIBAN());
-                    ErrorAccountResponse er = new ErrorAccountResponse("There already exists an account with iban: " + accountDTO.getIBAN());
+                } else if (accountFoundByName != null) {
+                    LOGGER.warn("There already exists an account with name: {}", accountDTO.getName());
+                    ErrorAccountResponse er = new ErrorAccountResponse("There already exists an account with name " + accountDTO.getName());
                     return Response.status(Response.Status.BAD_REQUEST).entity(er).build();
                 } else {
                     Account newAccount = accountDAO.saveAccount(mapAccountDTO(accountDTO));
@@ -63,12 +60,8 @@ public class AccountController {
                     em.close();
                 }
             }
-        }
     }
 
-    private boolean dtoIsInvalid(AccountDTO accountDTO) {
-        return accountDTO.getName().isBlank() || accountDTO.getIBAN().isEmpty();
-    }
     private Account mapAccountDTO(AccountDTO accountDTO) {
         Entities.Account account = new Entities.Account();
         account.setIban(accountDTO.getIBAN());
