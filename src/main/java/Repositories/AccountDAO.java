@@ -5,7 +5,9 @@ import Entities.Account;
 public interface AccountDAO {
     Account saveAccount(Account account);
 
-    Account getByName(String name);
+    Account getByNameOrIban(Account account);
 
     Account getByIban(String iban);
+
+    boolean updateAccount(Account account);
 }

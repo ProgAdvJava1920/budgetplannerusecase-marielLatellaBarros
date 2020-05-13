@@ -8,6 +8,8 @@ import javax.persistence.*;
                 query = "SELECT a FROM Account a WHERE a.iban = :iban"),
         @NamedQuery(name="getByName",
                 query = "SELECT a FROM Account a WHERE a.name = :name"),
+        @NamedQuery(name="getByNameOrIban",
+                query = "SELECT a FROM Account a WHERE (a.name = :name OR a.iban = :iban)"),
 })
 @Table(name = "Account")
 public class Account {
