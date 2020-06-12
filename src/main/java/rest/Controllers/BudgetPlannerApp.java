@@ -1,4 +1,4 @@
-package Controllers;
+package rest.Controllers;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;

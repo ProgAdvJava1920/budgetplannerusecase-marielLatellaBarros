@@ -1,6 +1,7 @@
-package Repositories;
+package jpa;
 
 import Entities.Account;
+import Repositories.DAO;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -8,19 +9,18 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityTransaction;
 import javax.persistence.NoResultException;
 import javax.persistence.TypedQuery;
+import java.util.List;
 
-public class AccountDAOImpl implements AccountDAO {
-    private static final Logger LOGGER = LogManager.getLogger(AccountDAOImpl.class);
+public class AccountImpl implements DAO {
+    private static final Logger LOGGER = LogManager.getLogger(AccountImpl.class);
 
     private EntityManager entityManager;
 
-    public AccountDAOImpl(EntityManager em) {
+    public AccountImpl(EntityManager em) {
         this.entityManager = em;
     }
 
 
-
-    @Override
     public Account getByNameOrIban(Account account) {
         Account foundAccount = null;
         try {
@@ -39,6 +39,26 @@ public class AccountDAOImpl implements AccountDAO {
     }
 
     @Override
+    public Object create(Object o) throws Exception {
+        return null;
+    }
+
+    @Override
+    public Object getById(int id) throws Exception {
+        return null;
+    }
+
+    @Override
+    public Object getByNameOrIban(Object o) throws Exception {
+        return null;
+    }
+
+    @Override
+    public List getAll() throws Exception {
+        return null;
+    }
+
+    @Override
     public Account getByIban(String iban) {
         TypedQuery<Account> query = entityManager.createNamedQuery("getByIBAN", Account.class);
         query.setParameter("iban", iban);
@@ -53,6 +73,15 @@ public class AccountDAOImpl implements AccountDAO {
     }
 
     @Override
+    public boolean update(Object o) throws Exception {
+        return false;
+    }
+
+    @Override
+    public Object delete(Object o) throws Exception {
+        return null;
+    }
+
     public boolean updateAccount(Account account) {
         try {
             Account accountToUpdate = getByIban(account.getIban());
@@ -71,8 +100,7 @@ public class AccountDAOImpl implements AccountDAO {
         return false;
     }
 
-    @Override
-    public Account saveAccount(Account account) {
+    public Account create(Account account) {
 
         EntityTransaction tx = entityManager.getTransaction();
         tx.begin();

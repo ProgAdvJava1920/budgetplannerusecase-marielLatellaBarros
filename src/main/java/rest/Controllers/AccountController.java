@@ -1,9 +1,9 @@
-package Controllers;
+package rest.Controllers;
 
 import DataTransferObject.AccountDTO;
 import Entities.Account;
-import Repositories.AccountDAO;
-import Repositories.AccountDAOImpl;
+import Repositories.DAO;
+import jpa.AccountImpl;
 import Repositories.EntityManagerUtil;
 import ResponseObjects.ErrorAccountResponse;
 import org.apache.logging.log4j.LogManager;
@@ -30,12 +30,12 @@ public class AccountController {
         EntityManager em = EntityManagerUtil.createEntityManager();
 
         try {
-            AccountDAO accountDAO = new AccountDAOImpl(em);
+            DAO accountDAO = new AccountImpl(em);
             Account accountFoundInDatabase = accountDAO.getByNameOrIban(mapAccountDTO(accountDTO));
 
             //Account not found in database. Create new account
             if (accountFoundInDatabase == null) {
-                Account newAccount = accountDAO.saveAccount(mapAccountDTO(accountDTO));
+                Account newAccount = accountDAO.create(mapAccountDTO(accountDTO));
                 LOGGER.info("Account created successfully: {}", newAccount.getId());
                 return Response.created(UriBuilder.fromPath("/api/accounts/" + newAccount.getId()).build()).build(); //201
 
@@ -89,7 +89,7 @@ public class AccountController {
     }
 
     private Account mapAccountDTO(AccountDTO accountDTO) {
-        Entities.Account account = new Entities.Account();
+        Account account = new Account();
         account.setIban(accountDTO.getIBAN());
         account.setName(accountDTO.getName());
         //TODO: set payments for an account
