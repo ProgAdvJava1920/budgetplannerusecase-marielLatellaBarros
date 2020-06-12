@@ -1,11 +1,11 @@
 package rest.Controllers;
 
-import DataTransferObject.AccountDTO;
+import rest.DataTransferObject.AccountDTO;
 import Entities.Account;
-import Repositories.DAO;
+import be.pxl.student.DAO;
 import jpa.AccountImpl;
-import Repositories.EntityManagerUtil;
-import ResponseObjects.ErrorAccountResponse;
+import jpa.EntityManagerUtil;
+import rest.ResponseObjects.ErrorAccountResponse;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -83,14 +83,14 @@ public class AccountController {
 
     private boolean accountNameAndIbanAlreadyExist(AccountDTO accountDTO, Account accountFoundInDatabase) {
         if (accountFoundInDatabase.getName().equals(accountDTO.getName())) {
-            return accountFoundInDatabase.getIban().equals(accountDTO.getIBAN());
+            return accountFoundInDatabase.getIBAN().equals(accountDTO.getIBAN());
         }
         return false;
     }
 
     private Account mapAccountDTO(AccountDTO accountDTO) {
         Account account = new Account();
-        account.setIban(accountDTO.getIBAN());
+        account.setIBAN(accountDTO.getIBAN());
         account.setName(accountDTO.getName());
         //TODO: set payments for an account
         //account.setPayments(accountDTO.getPayments());

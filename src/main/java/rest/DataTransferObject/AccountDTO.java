@@ -1,4 +1,4 @@
-package DataTransferObject;
+package rest.DataTransferObject;
 
 public class AccountDTO {
 

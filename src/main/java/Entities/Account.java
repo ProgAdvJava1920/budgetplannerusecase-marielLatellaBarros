@@ -17,9 +17,11 @@ import java.util.Objects;
 public class Account {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //@GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    @Column(length = 34)
     private String IBAN;
+    @Column(length = 45)
     private String name;
     @OneToMany(mappedBy = "account")
     private List<Payment> payments = new ArrayList<>();
@@ -29,6 +31,9 @@ public class Account {
     public Account(String IBAN, String name) {
         this.IBAN = IBAN;
         this.name = name;
+    }
+
+    public Account(int id, String IBAN, String name) {
     }
 
     public int getId() {

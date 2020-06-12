@@ -8,6 +8,10 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+/**
+ * Using JPA EntityManager it will not be needed to use the DAOManager.
+ * Use DAOManager to get a connection and interact with the database.
+ */
 public class DAOManager {
     private static Logger logger = (Logger) LogManager.getLogger(DAOManager.class);
 

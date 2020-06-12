@@ -1,7 +1,7 @@
 package jpa;
 
 import Entities.Account;
-import Repositories.DAO;
+import be.pxl.student.DAO;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -26,7 +26,7 @@ public class AccountImpl implements DAO {
         try {
             TypedQuery<Account> query = entityManager.createNamedQuery("getByNameOrIban", Account.class);
             query.setParameter("name", account.getName());
-            query.setParameter("iban", account.getIban());
+            query.setParameter("iban", account.getIBAN());
 
             foundAccount = query.getSingleResult();
 
@@ -84,7 +84,7 @@ public class AccountImpl implements DAO {
 
     public boolean updateAccount(Account account) {
         try {
-            Account accountToUpdate = getByIban(account.getIban());
+            Account accountToUpdate = getByIban(account.getIBAN());
 
             EntityTransaction tx =entityManager.getTransaction();
             tx.begin();

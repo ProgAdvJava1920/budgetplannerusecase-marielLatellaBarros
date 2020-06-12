@@ -1,4 +1,4 @@
-package ResponseObjects;
+package rest.ResponseObjects;
 
 public class ErrorAccountResponse {
     private String message;

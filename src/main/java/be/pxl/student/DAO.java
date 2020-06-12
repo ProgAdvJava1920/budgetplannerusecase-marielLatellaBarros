@@ -1,4 +1,4 @@
-package Repositories;
+package be.pxl.student;
 
 import java.util.List;
 
