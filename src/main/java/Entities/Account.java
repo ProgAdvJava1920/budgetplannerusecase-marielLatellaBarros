@@ -1,39 +1,49 @@
 package Entities;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
 
 @Entity
 @NamedQueries({
         @NamedQuery(name="getByIBAN",
-                query = "SELECT a FROM Account a WHERE a.iban = :iban"),
+                query = "SELECT a FROM Account a WHERE a.IBAN = :iban"),
         @NamedQuery(name="getByName",
                 query = "SELECT a FROM Account a WHERE a.name = :name"),
         @NamedQuery(name="getByNameOrIban",
-                query = "SELECT a FROM Account a WHERE (a.name = :name OR a.iban = :iban)"),
+                query = "SELECT a FROM Account a WHERE (a.name = :name OR a.IBAN = :iban)"),
 })
-@Table(name = "Account")
 public class Account {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
-    private String iban;
+    private int id;
+    private String IBAN;
     private String name;
+    @OneToMany(mappedBy = "account")
+    private List<Payment> payments = new ArrayList<>();
 
-    public Integer getId() {
-        return id;
+    public Account() { }
+
+    public Account(String IBAN, String name) {
+        this.IBAN = IBAN;
+        this.name = name;
     }
 
-    public void setId(Integer id) {
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
         this.id = id;
     }
 
-    public String getIban() {
-        return iban;
+    public String getIBAN() {
+        return IBAN;
     }
 
-    public void setIban(String iban) {
-        this.iban = iban;
+    public void setIBAN(String iban) {
+        this.IBAN = iban;
     }
 
     public String getName() {
@@ -42,5 +52,38 @@ public class Account {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public List<Payment> getPayments() {
+        return payments;
+    }
+
+    public void setPayments(List<Payment> payments) {
+        this.payments = payments;
+    }
+
+    @Override
+    //Same name and same account => same object
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Account account = (Account) o;
+        return Objects.equals(IBAN, account.IBAN) &&
+                Objects.equals(name, account.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(IBAN, name);
+    }
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "id=" + id +
+                ", IBAN='" + IBAN + '\'' +
+                ", name='" + name + '\'' +
+                ", payments=" + payments +
+                '}';
     }
 }
