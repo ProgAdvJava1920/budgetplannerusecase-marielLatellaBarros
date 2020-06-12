@@ -1,4 +1,4 @@
-//package be.pxl.student.dao;
+package jdbc;
 //
 //import be.pxl.student.entity.Payment;
 //
