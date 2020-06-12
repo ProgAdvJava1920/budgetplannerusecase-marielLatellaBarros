@@ -34,5 +34,15 @@ public class DAOManager {
         return connection;
     }
 
+    public void close(){
+        try{
+            if (connection != null && !connection.isClosed() ){
+                connection.close();
+            }
+        } catch (SQLException e) {
+            logger.warn(" Error closing connection", e);
+        }
+    }
+
 
 }
