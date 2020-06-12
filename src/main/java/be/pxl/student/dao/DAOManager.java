@@ -44,5 +44,21 @@ public class DAOManager {
         }
     }
 
+    public void commit() throws SQLException {
+        if (connection != null){
+            connection.commit();
+        }
+    }
+
+    public void rollback(Exception originalException){
+        if (connection != null){
+            try{
+                connection.rollback();
+            }catch (SQLException e) {
+                logger.warn("Rollback failed", originalException);
+            }
+        }
+    }
+
 
 }
