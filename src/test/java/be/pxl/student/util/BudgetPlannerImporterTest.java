@@ -1,7 +1,52 @@
 package be.pxl.student.util;
 
+import org.junit.jupiter.api.Test;
+
 //
-//public class BudgetPlannerImporterTest {
+public class BudgetPlannerImporterTest {
+
+    @Test
+    void read_csv_file_should_throw_our_own_exception_when_passing_null(){
+
+    }
+
+    @Test
+    void read_csv_file_should_return_list_of_size_30(){
+
+    }
+
+    @Test
+    void read_csv_file_should_return_non_empty_list(){
+
+    }
+
+    @Test
+    void read_csv_file_should_throw_our_own_exception_when_csv_file_does_not_(){
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //
 //    @Test
 //    public void paymentShouldReturnCorrectAmount() throws IOException {
@@ -58,4 +103,6 @@ package be.pxl.student.util;
 //
 //        Assertions.assertEquals(account, account2);
 //    }
-//}
+
+
+}
