@@ -31,6 +31,6 @@ public class BudgetPlannerMapperTest {
 
     @Test
     void it_should_map_to_account_list_with_1_account_with_2_parameters(){
-        
+
     }
 }
