@@ -2,6 +2,7 @@ package jpa;
 
 import entities.Account;
 import be.pxl.student.DAO;
+import exceptions.AccountException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -11,7 +12,7 @@ import javax.persistence.NoResultException;
 import javax.persistence.TypedQuery;
 import java.util.List;
 
-public class AccountRepositoryImpl implements DAO {
+public class AccountRepositoryImpl implements DAO<Account, AccountException> {
     private static final Logger LOGGER = LogManager.getLogger(AccountRepositoryImpl.class);
 
     private EntityManager entityManager;
@@ -20,66 +21,29 @@ public class AccountRepositoryImpl implements DAO {
         this.entityManager = em;
     }
 
+    @Override
+    public Account create(Account account) throws AccountException {
+        EntityTransaction tx = entityManager.getTransaction();
+        tx.begin();
+        entityManager.persist(account);
+        tx.commit();
 
-    public Account getByNameOrIban(Account account) {
-        Account foundAccount = null;
-        try {
-            TypedQuery<Account> query = entityManager.createNamedQuery("getByNameOrIban", Account.class);
-            query.setParameter("name", account.getName());
-            query.setParameter("iban", account.getIBAN());
-
-            foundAccount = query.getSingleResult();
-
-        } catch (NoResultException e) {
-            LOGGER.trace("No account found");
-        } catch (IllegalArgumentException e) {
-            LOGGER.trace("Wrong query name or parameter given to query or result cannot be inserted into variable type");
-        }
-        return foundAccount;
+        return account;
     }
 
     @Override
-    public Object create(Object o) throws Exception {
-        return null;
+    public Account getById(int id) throws AccountException {
+        throw new AccountException(" not yet implemented");
     }
 
     @Override
-    public Object getById(int id) throws Exception {
-        return null;
+    public List<Account> getAll() throws AccountException {
+        throw new AccountException(" not yet implemented");
     }
 
     @Override
-    public Object getByNameOrIban(Object o) throws Exception {
-        return null;
-    }
-
-    @Override
-    public List getAll() throws Exception {
-        return null;
-    }
-
-    @Override
-    public Account getByIban(String iban) {
-        TypedQuery<Account> query = entityManager.createNamedQuery("getByIBAN", Account.class);
-        query.setParameter("iban", iban);
-
-        Account result = null;
-        try {
-            result = query.getSingleResult();
-        } catch (NoResultException e) {
-            LOGGER.trace("No account found");
-        }
-        return result;
-    }
-
-    @Override
-    public boolean update(Object o) throws Exception {
-        return false;
-    }
-
-    @Override
-    public Object delete(Object o) throws Exception {
-        return null;
+    public boolean update(Account account) throws AccountException {
+        throw new AccountException(" not yet implemented");
     }
 
     public boolean updateAccount(Account account) {
@@ -100,13 +64,40 @@ public class AccountRepositoryImpl implements DAO {
         return false;
     }
 
-    public Account create(Account account) {
-
-        EntityTransaction tx = entityManager.getTransaction();
-        tx.begin();
-        entityManager.persist(account);
-        tx.commit();
-
-        return account;
+    @Override
+    public Account delete(Account account) throws AccountException {
+        throw new AccountException(" not yet implemented");
     }
+
+    public Account getByNameOrIban(Account account) {
+        Account foundAccount = null;
+        try {
+            TypedQuery<Account> query = entityManager.createNamedQuery("getByNameOrIban", Account.class);
+            query.setParameter("name", account.getName());
+            query.setParameter("iban", account.getIBAN());
+
+            foundAccount = query.getSingleResult();
+
+        } catch (NoResultException e) {
+            LOGGER.trace("No account found");
+        } catch (IllegalArgumentException e) {
+            LOGGER.trace("Wrong query name or parameter given to query or result cannot be inserted into variable type");
+        }
+        return foundAccount;
+    }
+
+    @Override
+    public Account getByIban(String iban) {
+        TypedQuery<Account> query = entityManager.createNamedQuery("getByIBAN", Account.class);
+        query.setParameter("iban", iban);
+
+        Account result = null;
+        try {
+            result = query.getSingleResult();
+        } catch (NoResultException e) {
+            LOGGER.trace("No account found");
+        }
+        return result;
+    }
+
 }
