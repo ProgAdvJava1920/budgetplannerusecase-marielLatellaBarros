@@ -14,7 +14,7 @@ import java.util.List;
 
 public class BudgetPlanner {
 
-    private static Logger logger = LogManager.getLogger(BudgetPlanner.class);
+    private static final Logger logger = LogManager.getLogger(BudgetPlanner.class);
 
     public static void main(String[] args) {
         String csvFile = "src/main/resources/account_payments.csv";
@@ -36,6 +36,7 @@ public class BudgetPlanner {
         }
     }
 
+    //TODO: add objects to database
     private static void insertIntoDatabase() {
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("budgetplanner");
     }

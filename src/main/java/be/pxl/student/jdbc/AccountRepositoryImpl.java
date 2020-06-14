@@ -41,14 +41,14 @@ public class AccountRepositoryImpl implements DAO<Account, AccountException> {
             if (resultSet.first()){
                 return new Account(
                         resultSet.getInt("id"),
-                        resultSet.getString(" IBAN"),
-                        resultSet.getString(" name")
+                        resultSet.getString("IBAN"),
+                        resultSet.getString("name")
                 );
             } else {
                 throw new AccountNotFoundException(String.format(" Account with id [%d] not found.", id));
             }
         } catch (SQLException e) {
-            throw new AccountException(String.format(" Exception while retrieving account with id: [%d].", id));
+            throw new AccountException(String.format("Exception while retrieving account with id: [%d].", id), e);
         }
     }
 
@@ -61,21 +61,21 @@ public class AccountRepositoryImpl implements DAO<Account, AccountException> {
             while (resultSet.next()) {
                 accounts.add(
                         new Account(
-                                resultSet.getInt(" id"),
-                                resultSet.getString(" IBAN"),
+                                resultSet.getInt("id"),
+                                resultSet.getString("IBAN"),
                                 resultSet.getString("name")
                         )
                 );
             }
         } catch (SQLException e) {
-            throw new AccountException(" Error retrieving accounts", e);
+            throw new AccountException("Error retrieving accounts", e);
         }
         return accounts;
     }
 
     public Account create(Account account) throws AccountException{
         try(PreparedStatement preparedStatement = daoManager.getConnection().prepareStatement(
-                "insert into account (' IBAN', ' name') values(?, ?)")){
+                "insert into account ('IBAN', 'name') values(?, ?)")){
 
 //            preparedStatement.setInt(1, account.getId());
             preparedStatement.setString(1, account.getIBAN());
@@ -94,9 +94,9 @@ public class AccountRepositoryImpl implements DAO<Account, AccountException> {
             daoManager.commit();
         } catch (SQLException e) {
             daoManager.rollback(e);
-            throw new AccountException(" Error creating account", e);
+            throw new AccountException("Error creating account", e);
         }
-        throw new AccountException(" Could not create account");
+        throw new AccountException("Could not create account");
     }
 
 

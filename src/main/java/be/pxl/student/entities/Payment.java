@@ -27,13 +27,13 @@ public class Payment {
     //private int accountId;//FK in database => change name
     @ManyToOne
     @JoinColumn(name = "accountId")
-    @Column(nullable = false)
+    //@Column(nullable = false)
     private Account account;
 
     //private int counterAccountId;//FK in database => change name
     @ManyToOne
     @JoinColumn(name = "counterAccountId")
-    @Column(nullable = false)
+    //@Column(nullable = false)
     private Account counterAccount;
 
 //

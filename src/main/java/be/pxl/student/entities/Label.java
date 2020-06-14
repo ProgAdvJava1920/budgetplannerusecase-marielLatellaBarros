@@ -12,6 +12,7 @@ public class Label {
     private String name;
     private String description;
 
+    @Transient
     @OneToMany(mappedBy = "label")
     private List<Payment> payments;
 

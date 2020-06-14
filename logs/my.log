@@ -1,0 +1,1174 @@
+2020-06-14 21:07:59.288 [main] ERROR be.pxl.student.BudgetPlanner - Starting csv import
+2020-06-14 21:07:59.290 [main] INFO  be.pxl.student.BudgetPlanner - Csv import done
+2020-06-14 21:07:59.290 [main] INFO  be.pxl.student.BudgetPlanner - Starting account mapping
+2020-06-14 21:07:59.293 [main] INFO  be.pxl.student.BudgetPlanner - account mapping done
+2020-06-14 21:07:59.323 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Log4j2LoggerProvider
+2020-06-14 21:07:59.410 [main] DEBUG org.hibernate.jpa.HibernatePersistenceProvider - Located and parsed 1 persistence units; checking each
+2020-06-14 21:07:59.410 [main] DEBUG org.hibernate.jpa.HibernatePersistenceProvider - Checking persistence-unit [name=budgetplanner, explicit-provider=null] against incoming persistence unit name [budgetplanner]
+2020-06-14 21:07:59.411 [main] DEBUG org.hibernate.jpa.boot.spi.ProviderChecker - No PersistenceProvider explicitly requested, assuming Hibernate
+2020-06-14 21:07:59.417 [main] DEBUG org.hibernate.jpa.internal.util.LogHelper - PersistenceUnitInfo [
+	name: budgetplanner
+	persistence provider classname: null
+	classloader: null
+	excludeUnlistedClasses: false
+	JTA datasource: null
+	Non JTA datasource: null
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/Users/mariel/Documents/PXL/02_secondYear/programmingAdvanced_Java/projectsbudgetplannerusecase-marielLatellaBarros_vBartClijsners/target/classes/
+	Shared Cache Mode: null
+	Validation Mode: null
+	Jar files URLs []
+	Managed classes names []
+	Mapping files names []
+	Properties [
+		javax.persistence.jdbc.driver: com.mysql.jdbc.Driver
+		javax.persistence.jdbc.password: admin
+		hibernate.dialect: org.hibernate.dialect.MySQLDialect
+		javax.persistence.jdbc.url: jdbc:mysql://localhost:3306/budgetplanner?useSSL=false
+		hibernate.show_sql: true
+		javax.persistence.schema-generation.database.action: drop-and-create
+		javax.persistence.jdbc.user: root]
+2020-06-14 21:07:59.422 [main] DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2020-06-14 21:07:59.424 [main] DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2020-06-14 21:07:59.428 [main] DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2020-06-14 21:07:59.490 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-06-14 21:07:59.492 [main] DEBUG org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-06-14 21:07:59.688 [main] DEBUG org.hibernate.service.spi.ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2020-06-14 21:07:59.703 [main] DEBUG org.hibernate.cache.internal.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2020-06-14 21:07:59.704 [main] DEBUG org.hibernate.cache.internal.RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2020-06-14 21:07:59.721 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-14 21:07:59.746 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@792bbc74
+2020-06-14 21:07:59.746 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@792bbc74
+2020-06-14 21:07:59.746 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@792bbc74
+2020-06-14 21:07:59.747 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@6821ea29
+2020-06-14 21:07:59.748 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@129b4fe2
+2020-06-14 21:07:59.748 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@58359ebd
+2020-06-14 21:07:59.750 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@14b030a0
+2020-06-14 21:07:59.750 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@14b030a0
+2020-06-14 21:07:59.750 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@14b030a0
+2020-06-14 21:07:59.751 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@75e91545
+2020-06-14 21:07:59.751 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@75e91545
+2020-06-14 21:07:59.752 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@75e91545
+2020-06-14 21:07:59.753 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@4b672daa
+2020-06-14 21:07:59.753 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@4b672daa
+2020-06-14 21:07:59.754 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@4b672daa
+2020-06-14 21:07:59.755 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@1c7fd41f
+2020-06-14 21:07:59.756 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@1c7fd41f
+2020-06-14 21:07:59.756 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@1c7fd41f
+2020-06-14 21:07:59.757 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@5974109
+2020-06-14 21:07:59.758 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@5974109
+2020-06-14 21:07:59.758 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@5974109
+2020-06-14 21:07:59.759 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@5c3b6c6e
+2020-06-14 21:07:59.759 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@5c3b6c6e
+2020-06-14 21:07:59.759 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@5c3b6c6e
+2020-06-14 21:07:59.761 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@47db5fa5
+2020-06-14 21:07:59.761 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@47db5fa5
+2020-06-14 21:07:59.762 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@47db5fa5
+2020-06-14 21:07:59.763 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@5b07730f
+2020-06-14 21:07:59.763 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@5b07730f
+2020-06-14 21:07:59.764 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@2fea7088
+2020-06-14 21:07:59.765 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@2fea7088
+2020-06-14 21:07:59.766 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@6f2cb653
+2020-06-14 21:07:59.767 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@6f2cb653
+2020-06-14 21:07:59.768 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@61884cb1
+2020-06-14 21:07:59.769 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@609640d5
+2020-06-14 21:07:59.771 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@556d0826
+2020-06-14 21:07:59.771 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@556d0826
+2020-06-14 21:07:59.773 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@16ecee1
+2020-06-14 21:07:59.773 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@16ecee1
+2020-06-14 21:07:59.781 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@6c6c5427
+2020-06-14 21:07:59.781 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@6c6c5427
+2020-06-14 21:07:59.783 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@36546a22
+2020-06-14 21:07:59.783 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@36546a22
+2020-06-14 21:07:59.785 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@47605f2f
+2020-06-14 21:07:59.785 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@47605f2f
+2020-06-14 21:07:59.789 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@242aa8d9
+2020-06-14 21:07:59.789 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@242aa8d9
+2020-06-14 21:07:59.792 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@45cff11c
+2020-06-14 21:07:59.793 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@45cff11c
+2020-06-14 21:07:59.795 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@630cb4a4
+2020-06-14 21:07:59.795 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@630cb4a4
+2020-06-14 21:07:59.797 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@5b057c8c
+2020-06-14 21:07:59.797 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@5b057c8c
+2020-06-14 21:07:59.800 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@24d4d7c9
+2020-06-14 21:07:59.800 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@24d4d7c9
+2020-06-14 21:07:59.802 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@50fe837a
+2020-06-14 21:07:59.802 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@50fe837a
+2020-06-14 21:07:59.804 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@7a527389
+2020-06-14 21:07:59.804 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@7a527389
+2020-06-14 21:07:59.804 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@7a527389
+2020-06-14 21:07:59.806 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@4264b240
+2020-06-14 21:07:59.807 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@4a335fa8
+2020-06-14 21:07:59.807 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@4a335fa8
+2020-06-14 21:07:59.808 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@4a335fa8
+2020-06-14 21:07:59.809 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@15eebbff
+2020-06-14 21:07:59.810 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@6e1d8f9e
+2020-06-14 21:07:59.811 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@305f7627
+2020-06-14 21:07:59.811 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@305f7627
+2020-06-14 21:07:59.813 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@269f4bad
+2020-06-14 21:07:59.813 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@269f4bad
+2020-06-14 21:07:59.814 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@26a4842b
+2020-06-14 21:07:59.814 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@26a4842b
+2020-06-14 21:07:59.815 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@78fb9a67
+2020-06-14 21:07:59.815 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@78fb9a67
+2020-06-14 21:07:59.816 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@6b5894c8
+2020-06-14 21:07:59.816 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@6b5894c8
+2020-06-14 21:07:59.816 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@5778826f
+2020-06-14 21:07:59.817 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@1252b961
+2020-06-14 21:07:59.818 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@1252b961
+2020-06-14 21:07:59.818 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@1252b961
+2020-06-14 21:07:59.819 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@4d098f9b
+2020-06-14 21:07:59.819 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@4d098f9b
+2020-06-14 21:07:59.819 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@4d098f9b
+2020-06-14 21:07:59.820 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@7b64240d
+2020-06-14 21:07:59.821 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@2e54db99
+2020-06-14 21:07:59.823 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@426b6a74
+2020-06-14 21:07:59.823 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@426b6a74
+2020-06-14 21:07:59.823 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@426b6a74
+2020-06-14 21:07:59.824 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@665e9289
+2020-06-14 21:07:59.824 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@665e9289
+2020-06-14 21:07:59.825 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@665e9289
+2020-06-14 21:07:59.825 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@350ec41e
+2020-06-14 21:07:59.825 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@5536379e
+2020-06-14 21:07:59.827 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@5ddabb18
+2020-06-14 21:07:59.827 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@5ddabb18
+2020-06-14 21:07:59.827 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@58e6d4b8
+2020-06-14 21:07:59.829 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@77602954
+2020-06-14 21:07:59.829 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@77602954
+2020-06-14 21:07:59.831 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@16f7b4af
+2020-06-14 21:07:59.831 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@16f7b4af
+2020-06-14 21:07:59.832 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@73c60324
+2020-06-14 21:07:59.832 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@2c104774
+2020-06-14 21:07:59.834 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@24bdb479
+2020-06-14 21:07:59.836 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@f6c03cb
+2020-06-14 21:07:59.837 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@f6c03cb
+2020-06-14 21:07:59.837 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@768ccdc5
+2020-06-14 21:07:59.837 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@4c6daf0
+2020-06-14 21:07:59.838 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@10650953
+2020-06-14 21:07:59.838 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@659eef7
+2020-06-14 21:07:59.838 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@162be91c
+2020-06-14 21:07:59.839 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@2488b073
+2020-06-14 21:07:59.839 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@1c9f0a20
+2020-06-14 21:07:59.839 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@55787112
+2020-06-14 21:07:59.850 [main] DEBUG org.hibernate.boot.internal.BootstrapContextImpl - Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@4648ce9] into BootstrapContext; was [null]
+2020-06-14 21:07:59.850 [main] DEBUG org.hibernate.boot.internal.BootstrapContextImpl - Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@569bf9eb] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@61526469]
+2020-06-14 21:07:59.904 [main] DEBUG org.hibernate.boot.internal.BootstrapContextImpl - Injecting JPA temp ClassLoader [null] into BootstrapContext; was [null]
+2020-06-14 21:07:59.904 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - ClassLoaderAccessImpl#injectTempClassLoader(null) [was null]
+2020-06-14 21:07:59.914 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2020-06-14 21:07:59.915 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2020-06-14 21:07:59.915 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2020-06-14 21:07:59.915 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2020-06-14 21:07:59.916 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2020-06-14 21:07:59.916 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2020-06-14 21:07:59.917 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2020-06-14 21:07:59.918 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2020-06-14 21:07:59.919 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2020-06-14 21:07:59.919 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2020-06-14 21:07:59.920 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2020-06-14 21:07:59.921 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2020-06-14 21:07:59.921 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2020-06-14 21:07:59.922 [main] DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2020-06-14 21:07:59.927 [main] WARN  org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2020-06-14 21:07:59.933 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/budgetplanner?useSSL=false]
+2020-06-14 21:07:59.933 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001001: Connection properties: {password=admin, user=root}
+2020-06-14 21:07:59.933 [main] INFO  org.hibernate.orm.connections.pooling - HHH10001003: Autocommit mode: false
+2020-06-14 21:07:59.935 [main] DEBUG org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - Initializing Connection pool with 1 Connections
+2020-06-14 21:07:59.936 [main] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20 (min=1)
+2020-06-14 21:08:00.204 [main] DEBUG org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 5.6.48
+      major : 5
+      minor : 6
+2020-06-14 21:08:00.204 [main] DEBUG org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector Java
+    version : mysql-connector-java-5.1.47 ( Revision: fe1903b1ecb4a96a917f7ed3190d80c049b1de29 )
+      major : 5
+      minor : 1
+2020-06-14 21:08:00.204 [main] DEBUG org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - JDBC version : 4.0
+2020-06-14 21:08:00.210 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2020-06-14 21:08:00.219 [main] DEBUG org.hibernate.engine.jdbc.env.spi.IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+2020-06-14 21:08:00.223 [main] DEBUG org.hibernate.engine.jdbc.env.spi.IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+2020-06-14 21:08:00.280 [main] DEBUG org.hibernate.boot.model.relational.Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2020-06-14 21:08:00.283 [main] DEBUG org.hibernate.type.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@30cdae70] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@1654a892]
+2020-06-14 21:08:00.318 [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: be.pxl.student.entities.Payment
+2020-06-14 21:08:00.328 [main] DEBUG org.hibernate.cfg.annotations.QueryBinder - Binding named query: getAllPayments => SELECT p FROM Payment p
+2020-06-14 21:08:00.332 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2020-06-14 21:08:00.350 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder - Import with entity name Payment
+2020-06-14 21:08:00.355 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder - Bind entity be.pxl.student.entities.Payment on table Payment
+2020-06-14 21:08:00.375 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Payment), mappingColumn=Id, insertable=true, updatable=true, unique=false}
+2020-06-14 21:08:00.377 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property Id with lazy=false
+2020-06-14 21:08:00.379 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [be.pxl.student.entities.Payment:Id]
+2020-06-14 21:08:00.380 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for Id
+2020-06-14 21:08:00.381 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property Id
+2020-06-14 21:08:00.383 [main] DEBUG org.hibernate.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(Id)]), Id, identity, , ...)
+2020-06-14 21:08:00.383 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Payment), mappingColumn=IBAN, insertable=true, updatable=true, unique=false}
+2020-06-14 21:08:00.384 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property IBAN with lazy=false
+2020-06-14 21:08:00.384 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [be.pxl.student.entities.Payment:IBAN]
+2020-06-14 21:08:00.384 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for IBAN
+2020-06-14 21:08:00.384 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property IBAN
+2020-06-14 21:08:00.385 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='accountId', referencedColumn='', mappedBy=''}
+2020-06-14 21:08:00.385 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Payment), mappingColumn=account, insertable=true, updatable=true, unique=false}
+2020-06-14 21:08:00.387 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property account
+2020-06-14 21:08:00.388 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Payment), mappingColumn=amount, insertable=true, updatable=true, unique=false}
+2020-06-14 21:08:00.388 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property amount with lazy=false
+2020-06-14 21:08:00.388 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [be.pxl.student.entities.Payment:amount]
+2020-06-14 21:08:00.389 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for amount
+2020-06-14 21:08:00.389 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property amount
+2020-06-14 21:08:00.389 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='counterAccountId', referencedColumn='', mappedBy=''}
+2020-06-14 21:08:00.389 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Payment), mappingColumn=counterAccount, insertable=true, updatable=true, unique=false}
+2020-06-14 21:08:00.389 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property counterAccount
+2020-06-14 21:08:00.389 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Payment), mappingColumn=currency, insertable=true, updatable=true, unique=false}
+2020-06-14 21:08:00.390 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property currency with lazy=false
+2020-06-14 21:08:00.390 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [be.pxl.student.entities.Payment:currency]
+2020-06-14 21:08:00.390 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for currency
+2020-06-14 21:08:00.390 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property currency
+2020-06-14 21:08:00.390 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Payment), mappingColumn=date, insertable=true, updatable=true, unique=false}
+2020-06-14 21:08:00.390 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property date with lazy=false
+2020-06-14 21:08:00.390 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [be.pxl.student.entities.Payment:date]
+2020-06-14 21:08:00.391 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for date
+2020-06-14 21:08:00.391 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property date
+2020-06-14 21:08:00.391 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Payment), mappingColumn=detail, insertable=true, updatable=true, unique=false}
+2020-06-14 21:08:00.391 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property detail with lazy=false
+2020-06-14 21:08:00.391 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [be.pxl.student.entities.Payment:detail]
+2020-06-14 21:08:00.392 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for detail
+2020-06-14 21:08:00.392 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property detail
+2020-06-14 21:08:00.393 [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: be.pxl.student.entities.Account
+2020-06-14 21:08:00.393 [main] DEBUG org.hibernate.cfg.annotations.QueryBinder - Binding named query: findAll => SELECT a FROM Account as a
+2020-06-14 21:08:00.393 [main] DEBUG org.hibernate.cfg.annotations.QueryBinder - Binding named query: getByIBAN => SELECT a FROM Account a WHERE a.IBAN = :iban
+2020-06-14 21:08:00.393 [main] DEBUG org.hibernate.cfg.annotations.QueryBinder - Binding named query: getByName => SELECT a FROM Account a WHERE a.name = :name
+2020-06-14 21:08:00.393 [main] DEBUG org.hibernate.cfg.annotations.QueryBinder - Binding named query: getByNameOrIban => SELECT a FROM Account a WHERE (a.name = :name OR a.IBAN = :iban)
+2020-06-14 21:08:00.393 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2020-06-14 21:08:00.394 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder - Import with entity name Account
+2020-06-14 21:08:00.394 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder - Bind entity be.pxl.student.entities.Account on table Account
+2020-06-14 21:08:00.396 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Account), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2020-06-14 21:08:00.397 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+2020-06-14 21:08:00.397 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [be.pxl.student.entities.Account:id]
+2020-06-14 21:08:00.397 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for id
+2020-06-14 21:08:00.397 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property id
+2020-06-14 21:08:00.397 [main] DEBUG org.hibernate.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+2020-06-14 21:08:00.397 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Account), mappingColumn=IBAN, insertable=true, updatable=true, unique=false}
+2020-06-14 21:08:00.398 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property IBAN with lazy=false
+2020-06-14 21:08:00.398 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [be.pxl.student.entities.Account:IBAN]
+2020-06-14 21:08:00.398 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for IBAN
+2020-06-14 21:08:00.398 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property IBAN
+2020-06-14 21:08:00.398 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Account), mappingColumn=name, insertable=true, updatable=true, unique=false}
+2020-06-14 21:08:00.398 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property name with lazy=false
+2020-06-14 21:08:00.398 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [be.pxl.student.entities.Account:name]
+2020-06-14 21:08:00.398 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for name
+2020-06-14 21:08:00.398 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property name
+2020-06-14 21:08:00.399 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='account'}
+2020-06-14 21:08:00.399 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Account), mappingColumn=payments, insertable=true, updatable=true, unique=false}
+2020-06-14 21:08:00.400 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Account), mappingColumn=null, insertable=true, updatable=true, unique=false}
+2020-06-14 21:08:00.405 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Account), mappingColumn=element, insertable=true, updatable=true, unique=false}
+2020-06-14 21:08:00.405 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Account), mappingColumn=payments_KEY, insertable=true, updatable=true, unique=false}
+2020-06-14 21:08:00.405 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='payments_KEY', referencedColumn='null', mappedBy='null'}
+2020-06-14 21:08:00.406 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='account'}
+2020-06-14 21:08:00.406 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='account'}
+2020-06-14 21:08:00.406 [main] DEBUG org.hibernate.cfg.annotations.CollectionBinder - Collection role: be.pxl.student.entities.Account.payments
+2020-06-14 21:08:00.408 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property payments
+2020-06-14 21:08:00.408 [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: be.pxl.student.entities.Label
+2020-06-14 21:08:00.408 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2020-06-14 21:08:00.408 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder - Import with entity name Label
+2020-06-14 21:08:00.409 [main] DEBUG org.hibernate.cfg.annotations.EntityBinder - Bind entity be.pxl.student.entities.Label on table Label
+2020-06-14 21:08:00.411 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Label), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2020-06-14 21:08:00.411 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+2020-06-14 21:08:00.411 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [be.pxl.student.entities.Label:id]
+2020-06-14 21:08:00.411 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for id
+2020-06-14 21:08:00.411 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property id
+2020-06-14 21:08:00.411 [main] DEBUG org.hibernate.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+2020-06-14 21:08:00.412 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Label), mappingColumn=description, insertable=true, updatable=true, unique=false}
+2020-06-14 21:08:00.412 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property description with lazy=false
+2020-06-14 21:08:00.412 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [be.pxl.student.entities.Label:description]
+2020-06-14 21:08:00.412 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for description
+2020-06-14 21:08:00.412 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property description
+2020-06-14 21:08:00.412 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(Label), mappingColumn=name, insertable=true, updatable=true, unique=false}
+2020-06-14 21:08:00.412 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - MetadataSourceProcessor property name with lazy=false
+2020-06-14 21:08:00.413 [main] DEBUG org.hibernate.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [be.pxl.student.entities.Label:name]
+2020-06-14 21:08:00.413 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - building SimpleValue for name
+2020-06-14 21:08:00.413 [main] DEBUG org.hibernate.cfg.annotations.PropertyBinder - Building property name
+2020-06-14 21:08:00.414 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for Id
+2020-06-14 21:08:00.414 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for IBAN
+2020-06-14 21:08:00.414 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for amount
+2020-06-14 21:08:00.414 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for currency
+2020-06-14 21:08:00.414 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for date
+2020-06-14 21:08:00.414 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for detail
+2020-06-14 21:08:00.414 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for id
+2020-06-14 21:08:00.414 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for IBAN
+2020-06-14 21:08:00.415 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for name
+2020-06-14 21:08:00.415 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for id
+2020-06-14 21:08:00.415 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for description
+2020-06-14 21:08:00.415 [main] DEBUG org.hibernate.cfg.annotations.SimpleValueBinder - Starting fillSimpleValue for name
+2020-06-14 21:08:00.417 [main] DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [payment]
+2020-06-14 21:08:00.417 [main] DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [account]
+2020-06-14 21:08:00.418 [main] DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [label]
+2020-06-14 21:08:00.418 [main] DEBUG org.hibernate.cfg.CollectionSecondPass - Second pass for collection: be.pxl.student.entities.Account.payments
+2020-06-14 21:08:00.418 [main] DEBUG org.hibernate.cfg.annotations.CollectionBinder - Binding a OneToMany: be.pxl.student.entities.Account.payments through a foreign key
+2020-06-14 21:08:00.418 [main] DEBUG org.hibernate.cfg.annotations.CollectionBinder - Mapping collection: be.pxl.student.entities.Account.payments -> Payment
+2020-06-14 21:08:00.419 [main] DEBUG org.hibernate.cfg.annotations.TableBinder - Retrieving property be.pxl.student.entities.Payment.account
+2020-06-14 21:08:00.419 [main] DEBUG org.hibernate.cfg.CollectionSecondPass - Mapped collection key: accountId, one-to-many: be.pxl.student.entities.Payment
+2020-06-14 21:08:00.419 [main] DEBUG org.hibernate.boot.internal.InFlightMetadataCollectorImpl - Resolving reference to class: be.pxl.student.entities.Account
+2020-06-14 21:08:00.421 [main] DEBUG org.hibernate.boot.internal.InFlightMetadataCollectorImpl - Resolving reference to class: be.pxl.student.entities.Account
+2020-06-14 21:08:00.422 [main] DEBUG org.hibernate.boot.internal.InFlightMetadataCollectorImpl - Resolving reference to class: be.pxl.student.entities.Account
+2020-06-14 21:08:00.422 [main] DEBUG org.hibernate.boot.internal.InFlightMetadataCollectorImpl - Resolving reference to class: be.pxl.student.entities.Account
+2020-06-14 21:08:00.445 [main] DEBUG org.hibernate.internal.SessionFactoryImpl - Building session factory
+2020-06-14 21:08:00.447 [main] DEBUG org.hibernate.cfg.Settings - SessionFactory name : null
+2020-06-14 21:08:00.448 [main] DEBUG org.hibernate.cfg.Settings - Automatic flush during beforeCompletion(): enabled
+2020-06-14 21:08:00.449 [main] DEBUG org.hibernate.cfg.Settings - Automatic session close at end of transaction: disabled
+2020-06-14 21:08:00.449 [main] DEBUG org.hibernate.cfg.Settings - Statistics: disabled
+2020-06-14 21:08:00.449 [main] DEBUG org.hibernate.cfg.Settings - Deleted entity synthetic identifier rollback: disabled
+2020-06-14 21:08:00.449 [main] DEBUG org.hibernate.cfg.Settings - Default entity-mode: pojo
+2020-06-14 21:08:00.450 [main] DEBUG org.hibernate.cfg.Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2020-06-14 21:08:00.450 [main] DEBUG org.hibernate.cfg.Settings - Allow initialization of lazy state outside session : disabled
+2020-06-14 21:08:00.450 [main] DEBUG org.hibernate.cfg.Settings - Using BatchFetchStyle : LEGACY
+2020-06-14 21:08:00.450 [main] DEBUG org.hibernate.cfg.Settings - Default batch fetch size: -1
+2020-06-14 21:08:00.450 [main] DEBUG org.hibernate.cfg.Settings - Maximum outer join fetch depth: 2
+2020-06-14 21:08:00.450 [main] DEBUG org.hibernate.cfg.Settings - Default null ordering: NONE
+2020-06-14 21:08:00.450 [main] DEBUG org.hibernate.cfg.Settings - Order SQL updates by primary key: disabled
+2020-06-14 21:08:00.450 [main] DEBUG org.hibernate.cfg.Settings - Order SQL inserts for batching: disabled
+2020-06-14 21:08:00.450 [main] DEBUG org.hibernate.cfg.Settings - multi-tenancy strategy : NONE
+2020-06-14 21:08:00.450 [main] DEBUG org.hibernate.cfg.Settings - JTA Track by Thread: enabled
+2020-06-14 21:08:00.451 [main] DEBUG org.hibernate.cfg.Settings - Query language substitutions: {}
+2020-06-14 21:08:00.451 [main] DEBUG org.hibernate.cfg.Settings - Named query checking : enabled
+2020-06-14 21:08:00.451 [main] DEBUG org.hibernate.cfg.Settings - Second-level cache: disabled
+2020-06-14 21:08:00.451 [main] DEBUG org.hibernate.cfg.Settings - Second-level query cache: disabled
+2020-06-14 21:08:00.451 [main] DEBUG org.hibernate.cfg.Settings - Second-level query cache factory: null
+2020-06-14 21:08:00.451 [main] DEBUG org.hibernate.cfg.Settings - Second-level cache region prefix: null
+2020-06-14 21:08:00.451 [main] DEBUG org.hibernate.cfg.Settings - Optimize second-level cache for minimal puts: disabled
+2020-06-14 21:08:00.451 [main] DEBUG org.hibernate.cfg.Settings - Structured second-level cache entries: disabled
+2020-06-14 21:08:00.451 [main] DEBUG org.hibernate.cfg.Settings - Second-level cache direct-reference entries: disabled
+2020-06-14 21:08:00.451 [main] DEBUG org.hibernate.cfg.Settings - Automatic eviction of collection cache: disabled
+2020-06-14 21:08:00.452 [main] DEBUG org.hibernate.cfg.Settings - JDBC batch size: 15
+2020-06-14 21:08:00.452 [main] DEBUG org.hibernate.cfg.Settings - JDBC batch updates for versioned data: enabled
+2020-06-14 21:08:00.452 [main] DEBUG org.hibernate.cfg.Settings - Scrollable result sets: enabled
+2020-06-14 21:08:00.452 [main] DEBUG org.hibernate.cfg.Settings - Wrap result sets: disabled
+2020-06-14 21:08:00.452 [main] DEBUG org.hibernate.cfg.Settings - JDBC3 getGeneratedKeys(): enabled
+2020-06-14 21:08:00.452 [main] DEBUG org.hibernate.cfg.Settings - JDBC result set fetch size: null
+2020-06-14 21:08:00.452 [main] DEBUG org.hibernate.cfg.Settings - Connection release mode: AFTER_TRANSACTION
+2020-06-14 21:08:00.452 [main] DEBUG org.hibernate.cfg.Settings - Generate SQL with comments: disabled
+2020-06-14 21:08:00.453 [main] DEBUG org.hibernate.cfg.Settings - JPA compliance - query : disabled
+2020-06-14 21:08:00.453 [main] DEBUG org.hibernate.cfg.Settings - JPA compliance - closed-handling : disabled
+2020-06-14 21:08:00.453 [main] DEBUG org.hibernate.cfg.Settings - JPA compliance - lists : disabled
+2020-06-14 21:08:00.453 [main] DEBUG org.hibernate.cfg.Settings - JPA compliance - transactions : disabled
+2020-06-14 21:08:00.510 [main] DEBUG org.hibernate.internal.SessionFactoryImpl - Session factory constructed with filter configurations : {}
+2020-06-14 21:08:00.510 [main] DEBUG org.hibernate.internal.SessionFactoryImpl - Instantiating session factory with properties: {java.specification.version=13, sun.jnu.encoding=UTF-8, hibernate.dialect=org.hibernate.dialect.MySQLDialect, java.class.path=/Users/mariel/Documents/PXL/02_secondYear/programmingAdvanced_Java/projectsbudgetplannerusecase-marielLatellaBarros_vBartClijsners/target/classes:/Users/mariel/.m2/repository/org/hibernate/hibernate-core/5.4.12.Final/hibernate-core-5.4.12.Final.jar:/Users/mariel/.m2/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/Users/mariel/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar:/Users/mariel/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar:/Users/mariel/.m2/repository/net/bytebuddy/byte-buddy/1.10.7/byte-buddy-1.10.7.jar:/Users/mariel/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/mariel/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar:/Users/mariel/.m2/repository/org/jboss/jandex/2.1.1.Final/jandex-2.1.1.Final.jar:/Users/mariel/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/Users/mariel/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar:/Users/mariel/.m2/repository/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar:/Users/mariel/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.0.Final/hibernate-commons-annotations-5.1.0.Final.jar:/Users/mariel/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar:/Users/mariel/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar:/Users/mariel/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar:/Users/mariel/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar:/Users/mariel/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar:/Users/mariel/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar:/Users/mariel/.m2/repository/mysql/mysql-connector-java/5.1.47/mysql-connector-java-5.1.47.jar:/Users/mariel/.m2/repository/org/apache/logging/log4j/log4j-api/2.13.0/log4j-api-2.13.0.jar:/Users/mariel/.m2/repository/org/apache/logging/log4j/log4j-core/2.13.0/log4j-core-2.13.0.jar:/Users/mariel/.m2/repository/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar:/Users/mariel/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/Users/mariel/.m2/repository/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar:/Users/mariel/.m2/repository/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar:/Users/mariel/.m2/repository/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, java.vendor.url=https://java.oracle.com/, user.timezone=Europe/Brussels, javax.persistence.jdbc.url=jdbc:mysql://localhost:3306/budgetplanner?useSSL=false, javax.persistence.jdbc.user=****, org.apache.logging.log4j.assignedSequences=12741, java.vm.specification.version=13, os.name=Mac OS X, sun.java.launcher=SUN_STANDARD, user.country=BE, local.setting.IS_JTA_TXN_COORD=false, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk-13.jdk/Contents/Home/lib, sun.java.command=be.pxl.student.BudgetPlanner, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, jdk.debug=release, sun.cpu.endian=little, user.home=/Users/mariel, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2019-09-17, java.home=/Library/Java/JavaVirtualMachines/jdk-13.jdk/Contents/Home, file.separator=/, java.vm.compressedOopsMode=Zero based, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, javax.persistence.jdbc.driver=com.mysql.jdbc.Driver, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, java.runtime.version=13+33, user.name=mariel, path.separator=:, hibernate.connection.username=****, os.version=10.14.5, java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/budgetplanner?useSSL=false, file.encoding=UTF-8, hibernate.ejb.persistenceUnitName=budgetplanner, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.show_sql=true, hibernate.connection.driver_class=com.mysql.jdbc.Driver, java.vendor.url.bug=https://bugreport.java.com/bugreport/, java.io.tmpdir=/var/folders/54/_q7j0z6x5gg_11nkgmxxzdpc0000gn/T/, java.version=13, user.dir=/Users/mariel/Documents/PXL/02_secondYear/programmingAdvanced_Java/projectsbudgetplannerusecase-marielLatellaBarros_vBartClijsners, os.arch=x86_64, java.vm.specification.name=Java Virtual Machine Specification, javax.persistence.schema-generation.database.action=drop-and-create, hibernate.connection.password=****, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.registry.StandardServiceRegistryBuilder$1@5b498842, java.library.path=/Users/mariel/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.vendor=Oracle Corporation, java.vm.info=mixed mode, sharing, java.vm.version=13+33, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeBig, javax.persistence.jdbc.password=****, socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16, java.class.version=57.0}
+2020-06-14 21:08:00.517 [main] DEBUG org.hibernate.secure.spi.JaccIntegrator - Skipping JACC integration as it was not enabled
+2020-06-14 21:08:00.518 [main] DEBUG org.hibernate.internal.SessionFactoryImpl - Instantiated session factory
+2020-06-14 21:08:00.518 [main] DEBUG org.hibernate.type.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@30cdae70] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@468be356]
+2020-06-14 21:08:00.541 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [be.pxl.student.entities.Payment] is safe
+2020-06-14 21:08:00.541 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : be.pxl.student.entities.Payment
+2020-06-14 21:08:00.551 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [be.pxl.student.entities.Payment] is safe
+2020-06-14 21:08:00.551 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : be.pxl.student.entities.Payment
+2020-06-14 21:08:00.707 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [be.pxl.student.entities.Account] is safe
+2020-06-14 21:08:00.707 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : be.pxl.student.entities.Account
+2020-06-14 21:08:00.708 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [be.pxl.student.entities.Account] is safe
+2020-06-14 21:08:00.708 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : be.pxl.student.entities.Account
+2020-06-14 21:08:00.730 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [be.pxl.student.entities.Label] is safe
+2020-06-14 21:08:00.730 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : be.pxl.student.entities.Label
+2020-06-14 21:08:00.731 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - Not known whether passed class name [be.pxl.student.entities.Label] is safe
+2020-06-14 21:08:00.731 [main] DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : be.pxl.student.entities.Label
+2020-06-14 21:08:00.752 [main] DEBUG org.hibernate.persister.collection.AbstractCollectionPersister - Static SQL for collection: be.pxl.student.entities.Account.payments
+2020-06-14 21:08:00.752 [main] DEBUG org.hibernate.persister.collection.AbstractCollectionPersister -  Row insert: update Payment set accountId=? where Id=?
+2020-06-14 21:08:00.753 [main] DEBUG org.hibernate.persister.collection.AbstractCollectionPersister -  Row update: update Payment set  where Id=?
+2020-06-14 21:08:00.753 [main] DEBUG org.hibernate.persister.collection.AbstractCollectionPersister -  Row delete: update Payment set accountId=null where accountId=? and Id=?
+2020-06-14 21:08:00.753 [main] DEBUG org.hibernate.persister.collection.AbstractCollectionPersister -  One-shot delete: update Payment set accountId=null where accountId=?
+2020-06-14 21:08:00.757 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: be.pxl.student.entities.Payment
+2020-06-14 21:08:00.757 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select Id from Payment where Id =?
+2020-06-14 21:08:00.757 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select payment_.Id, payment_.IBAN as iban2_2_, payment_.accountId as accounti7_2_, payment_.amount as amount3_2_, payment_.counterAccountId as countera8_2_, payment_.currency as currency4_2_, payment_.date as date5_2_, payment_.detail as detail6_2_ from Payment payment_ where payment_.Id=?
+2020-06-14 21:08:00.757 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into Payment (IBAN, accountId, amount, counterAccountId, currency, date, detail, Id) values (?, ?, ?, ?, ?, ?, ?, ?)
+2020-06-14 21:08:00.757 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update Payment set IBAN=?, accountId=?, amount=?, counterAccountId=?, currency=?, date=?, detail=? where Id=?
+2020-06-14 21:08:00.757 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from Payment where Id=?
+2020-06-14 21:08:00.757 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Identity insert: insert into Payment (IBAN, accountId, amount, counterAccountId, currency, date, detail) values (?, ?, ?, ?, ?, ?, ?)
+2020-06-14 21:08:00.771 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2d7a9786]
+2020-06-14 21:08:00.772 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : IBAN
+2020-06-14 21:08:00.772 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : account
+2020-06-14 21:08:00.774 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@235d29d6]
+2020-06-14 21:08:00.776 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : account.IBAN
+2020-06-14 21:08:00.776 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : account.name
+2020-06-14 21:08:00.776 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : account.payments
+2020-06-14 21:08:00.776 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : account.payments
+2020-06-14 21:08:00.776 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : amount
+2020-06-14 21:08:00.776 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : counterAccount
+2020-06-14 21:08:00.776 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2687725a]
+2020-06-14 21:08:00.777 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : counterAccount.IBAN
+2020-06-14 21:08:00.777 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : counterAccount.name
+2020-06-14 21:08:00.777 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : counterAccount.payments
+2020-06-14 21:08:00.777 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : counterAccount.payments
+2020-06-14 21:08:00.777 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : currency
+2020-06-14 21:08:00.777 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : date
+2020-06-14 21:08:00.777 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : detail
+2020-06-14 21:08:00.777 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-06-14 21:08:00.784 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-06-14 21:08:00.787 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=be.pxl.student.entities.Payment)
+    - Returns
+       - EntityReturnImpl(entity=be.pxl.student.entities.Payment, querySpaceUid=<gen:0>, path=be.pxl.student.entities.Payment)
+          - EntityAttributeFetchImpl(entity=be.pxl.student.entities.Account, querySpaceUid=<gen:1>, path=be.pxl.student.entities.Payment.account)
+          - EntityAttributeFetchImpl(entity=be.pxl.student.entities.Account, querySpaceUid=<gen:2>, path=be.pxl.student.entities.Payment.counterAccount)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=be.pxl.student.entities.Payment)
+          - SQL table alias mapping - payment0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+          - JOIN (JoinDefinedByMetadata(account)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=be.pxl.student.entities.Account)
+                - SQL table alias mapping - account1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+          - JOIN (JoinDefinedByMetadata(counterAccount)) : <gen:0> -> <gen:2>
+             - EntityQuerySpaceImpl(uid=<gen:2>, entity=be.pxl.student.entities.Account)
+                - SQL table alias mapping - account2_
+                - alias suffix - 2_
+                - suffixed key columns - {id1_0_2_}
+
+2020-06-14 21:08:00.789 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity be.pxl.student.entities.Payment [NONE]: select payment0_.Id as id1_2_0_, payment0_.IBAN as iban2_2_0_, payment0_.accountId as accounti7_2_0_, payment0_.amount as amount3_2_0_, payment0_.counterAccountId as countera8_2_0_, payment0_.currency as currency4_2_0_, payment0_.date as date5_2_0_, payment0_.detail as detail6_2_0_, account1_.id as id1_0_1_, account1_.IBAN as iban2_0_1_, account1_.name as name3_0_1_, account2_.id as id1_0_2_, account2_.IBAN as iban2_0_2_, account2_.name as name3_0_2_ from Payment payment0_ left outer join Account account1_ on payment0_.accountId=account1_.id left outer join Account account2_ on payment0_.counterAccountId=account2_.id where payment0_.Id=?
+2020-06-14 21:08:00.789 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5349b246]
+2020-06-14 21:08:00.789 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : IBAN
+2020-06-14 21:08:00.789 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : account
+2020-06-14 21:08:00.790 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2aaf152b]
+2020-06-14 21:08:00.790 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : account.IBAN
+2020-06-14 21:08:00.790 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : account.name
+2020-06-14 21:08:00.790 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : account.payments
+2020-06-14 21:08:00.790 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : account.payments
+2020-06-14 21:08:00.790 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : amount
+2020-06-14 21:08:00.790 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : counterAccount
+2020-06-14 21:08:00.790 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@27fe9713]
+2020-06-14 21:08:00.790 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : counterAccount.IBAN
+2020-06-14 21:08:00.790 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : counterAccount.name
+2020-06-14 21:08:00.790 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : counterAccount.payments
+2020-06-14 21:08:00.790 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : counterAccount.payments
+2020-06-14 21:08:00.791 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : currency
+2020-06-14 21:08:00.791 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : date
+2020-06-14 21:08:00.791 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : detail
+2020-06-14 21:08:00.791 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-06-14 21:08:00.791 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-06-14 21:08:00.791 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=be.pxl.student.entities.Payment)
+    - Returns
+       - EntityReturnImpl(entity=be.pxl.student.entities.Payment, querySpaceUid=<gen:0>, path=be.pxl.student.entities.Payment)
+          - EntityAttributeFetchImpl(entity=be.pxl.student.entities.Account, querySpaceUid=<gen:1>, path=be.pxl.student.entities.Payment.account)
+          - EntityAttributeFetchImpl(entity=be.pxl.student.entities.Account, querySpaceUid=<gen:2>, path=be.pxl.student.entities.Payment.counterAccount)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=be.pxl.student.entities.Payment)
+          - SQL table alias mapping - payment0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+          - JOIN (JoinDefinedByMetadata(account)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=be.pxl.student.entities.Account)
+                - SQL table alias mapping - account1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+          - JOIN (JoinDefinedByMetadata(counterAccount)) : <gen:0> -> <gen:2>
+             - EntityQuerySpaceImpl(uid=<gen:2>, entity=be.pxl.student.entities.Account)
+                - SQL table alias mapping - account2_
+                - alias suffix - 2_
+                - suffixed key columns - {id1_0_2_}
+
+2020-06-14 21:08:00.792 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity be.pxl.student.entities.Payment [READ]: select payment0_.Id as id1_2_0_, payment0_.IBAN as iban2_2_0_, payment0_.accountId as accounti7_2_0_, payment0_.amount as amount3_2_0_, payment0_.counterAccountId as countera8_2_0_, payment0_.currency as currency4_2_0_, payment0_.date as date5_2_0_, payment0_.detail as detail6_2_0_, account1_.id as id1_0_1_, account1_.IBAN as iban2_0_1_, account1_.name as name3_0_1_, account2_.id as id1_0_2_, account2_.IBAN as iban2_0_2_, account2_.name as name3_0_2_ from Payment payment0_ left outer join Account account1_ on payment0_.accountId=account1_.id left outer join Account account2_ on payment0_.counterAccountId=account2_.id where payment0_.Id=?
+2020-06-14 21:08:00.799 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity be.pxl.student.entities.Payment: select payment0_.Id as id1_2_0_, payment0_.IBAN as iban2_2_0_, payment0_.accountId as accounti7_2_0_, payment0_.amount as amount3_2_0_, payment0_.counterAccountId as countera8_2_0_, payment0_.currency as currency4_2_0_, payment0_.date as date5_2_0_, payment0_.detail as detail6_2_0_ from Payment payment0_ where payment0_.Id=?
+2020-06-14 21:08:00.799 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity be.pxl.student.entities.Payment: select payment0_.Id as id1_2_0_, payment0_.IBAN as iban2_2_0_, payment0_.accountId as accounti7_2_0_, payment0_.amount as amount3_2_0_, payment0_.counterAccountId as countera8_2_0_, payment0_.currency as currency4_2_0_, payment0_.date as date5_2_0_, payment0_.detail as detail6_2_0_ from Payment payment0_ where payment0_.Id=?
+2020-06-14 21:08:00.800 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: be.pxl.student.entities.Account
+2020-06-14 21:08:00.800 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select id from Account where id =?
+2020-06-14 21:08:00.800 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select account_.id, account_.IBAN as iban2_0_, account_.name as name3_0_ from Account account_ where account_.id=?
+2020-06-14 21:08:00.800 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into Account (IBAN, name, id) values (?, ?, ?)
+2020-06-14 21:08:00.800 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update Account set IBAN=?, name=? where id=?
+2020-06-14 21:08:00.800 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from Account where id=?
+2020-06-14 21:08:00.800 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Identity insert: insert into Account (IBAN, name) values (?, ?)
+2020-06-14 21:08:00.801 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@58437801]
+2020-06-14 21:08:00.801 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : IBAN
+2020-06-14 21:08:00.801 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+2020-06-14 21:08:00.801 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : payments
+2020-06-14 21:08:00.801 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@642413d4]
+2020-06-14 21:08:00.802 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7b6c6e70]
+2020-06-14 21:08:00.803 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-06-14 21:08:00.803 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-06-14 21:08:00.803 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=be.pxl.student.entities.Account)
+    - Returns
+       - EntityReturnImpl(entity=be.pxl.student.entities.Account, querySpaceUid=<gen:0>, path=be.pxl.student.entities.Account)
+          - CollectionAttributeFetchImpl(collection=be.pxl.student.entities.Account.payments, querySpaceUid=<gen:1>, path=be.pxl.student.entities.Account.payments)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=be.pxl.student.entities.Payment, querySpaceUid=<gen:2>, path=be.pxl.student.entities.Account.payments.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=be.pxl.student.entities.Account)
+          - SQL table alias mapping - account0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2020-06-14 21:08:00.804 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity be.pxl.student.entities.Account [NONE]: select account0_.id as id1_0_0_, account0_.IBAN as iban2_0_0_, account0_.name as name3_0_0_ from Account account0_ where account0_.id=?
+2020-06-14 21:08:00.804 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3206174f]
+2020-06-14 21:08:00.804 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : IBAN
+2020-06-14 21:08:00.804 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+2020-06-14 21:08:00.804 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : payments
+2020-06-14 21:08:00.804 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@15eb0ae9]
+2020-06-14 21:08:00.804 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@65e0b505]
+2020-06-14 21:08:00.804 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-06-14 21:08:00.805 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-06-14 21:08:00.805 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=be.pxl.student.entities.Account)
+    - Returns
+       - EntityReturnImpl(entity=be.pxl.student.entities.Account, querySpaceUid=<gen:0>, path=be.pxl.student.entities.Account)
+          - CollectionAttributeFetchImpl(collection=be.pxl.student.entities.Account.payments, querySpaceUid=<gen:1>, path=be.pxl.student.entities.Account.payments)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=be.pxl.student.entities.Payment, querySpaceUid=<gen:2>, path=be.pxl.student.entities.Account.payments.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=be.pxl.student.entities.Account)
+          - SQL table alias mapping - account0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2020-06-14 21:08:00.805 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity be.pxl.student.entities.Account [READ]: select account0_.id as id1_0_0_, account0_.IBAN as iban2_0_0_, account0_.name as name3_0_0_ from Account account0_ where account0_.id=?
+2020-06-14 21:08:00.805 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity be.pxl.student.entities.Account: select account0_.id as id1_0_0_, account0_.IBAN as iban2_0_0_, account0_.name as name3_0_0_ from Account account0_ where account0_.id=?
+2020-06-14 21:08:00.805 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity be.pxl.student.entities.Account: select account0_.id as id1_0_0_, account0_.IBAN as iban2_0_0_, account0_.name as name3_0_0_ from Account account0_ where account0_.id=?
+2020-06-14 21:08:00.806 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister - Static SQL for entity: be.pxl.student.entities.Label
+2020-06-14 21:08:00.806 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Version select: select id from Label where id =?
+2020-06-14 21:08:00.806 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Snapshot select: select label_.id, label_.description as descript2_1_, label_.name as name3_1_ from Label label_ where label_.id=?
+2020-06-14 21:08:00.806 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Insert 0: insert into Label (description, name, id) values (?, ?, ?)
+2020-06-14 21:08:00.806 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Update 0: update Label set description=?, name=? where id=?
+2020-06-14 21:08:00.806 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Delete 0: delete from Label where id=?
+2020-06-14 21:08:00.806 [main] DEBUG org.hibernate.persister.entity.AbstractEntityPersister -  Identity insert: insert into Label (description, name) values (?, ?)
+2020-06-14 21:08:00.806 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@67de7a99]
+2020-06-14 21:08:00.806 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : description
+2020-06-14 21:08:00.806 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+2020-06-14 21:08:00.806 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-06-14 21:08:00.807 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-06-14 21:08:00.807 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=be.pxl.student.entities.Label)
+    - Returns
+       - EntityReturnImpl(entity=be.pxl.student.entities.Label, querySpaceUid=<gen:0>, path=be.pxl.student.entities.Label)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=be.pxl.student.entities.Label)
+          - SQL table alias mapping - label0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2020-06-14 21:08:00.807 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity be.pxl.student.entities.Label [NONE]: select label0_.id as id1_1_0_, label0_.description as descript2_1_0_, label0_.name as name3_1_0_ from Label label0_ where label0_.id=?
+2020-06-14 21:08:00.807 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@34aeacd1]
+2020-06-14 21:08:00.807 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : description
+2020-06-14 21:08:00.807 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : name
+2020-06-14 21:08:00.807 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-06-14 21:08:00.807 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-06-14 21:08:00.808 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(entity=be.pxl.student.entities.Label)
+    - Returns
+       - EntityReturnImpl(entity=be.pxl.student.entities.Label, querySpaceUid=<gen:0>, path=be.pxl.student.entities.Label)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=be.pxl.student.entities.Label)
+          - SQL table alias mapping - label0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2020-06-14 21:08:00.808 [main] DEBUG org.hibernate.loader.entity.plan.EntityLoader - Static select for entity be.pxl.student.entities.Label [READ]: select label0_.id as id1_1_0_, label0_.description as descript2_1_0_, label0_.name as name3_1_0_ from Label label0_ where label0_.id=?
+2020-06-14 21:08:00.808 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity be.pxl.student.entities.Label: select label0_.id as id1_1_0_, label0_.description as descript2_1_0_, label0_.name as name3_1_0_ from Label label0_ where label0_.id=?
+2020-06-14 21:08:00.808 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity be.pxl.student.entities.Label: select label0_.id as id1_1_0_, label0_.description as descript2_1_0_, label0_.name as name3_1_0_ from Label label0_ where label0_.id=?
+2020-06-14 21:08:00.815 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@5e922647]
+2020-06-14 21:08:00.815 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@433c6abb]
+2020-06-14 21:08:00.815 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : IBAN
+2020-06-14 21:08:00.815 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : account
+2020-06-14 21:08:00.815 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : account
+2020-06-14 21:08:00.815 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : amount
+2020-06-14 21:08:00.816 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : counterAccount
+2020-06-14 21:08:00.816 [main] DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@61ecbee9]
+2020-06-14 21:08:00.816 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : counterAccount.IBAN
+2020-06-14 21:08:00.816 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : counterAccount.name
+2020-06-14 21:08:00.816 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : counterAccount.payments
+2020-06-14 21:08:00.816 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Property path deemed to be circular : counterAccount.payments
+2020-06-14 21:08:00.816 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : currency
+2020-06-14 21:08:00.816 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : date
+2020-06-14 21:08:00.816 [main] DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker - Visiting attribute path : detail
+2020-06-14 21:08:00.816 [main] DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+2020-06-14 21:08:00.818 [main] DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+2020-06-14 21:08:00.819 [main] DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter - LoadPlan(collection=be.pxl.student.entities.Account.payments)
+    - Returns
+       - CollectionReturnImpl(collection=be.pxl.student.entities.Account.payments, querySpaceUid=<gen:0>, path=[be.pxl.student.entities.Account.payments])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=be.pxl.student.entities.Payment, querySpaceUid=<gen:1>, path=[be.pxl.student.entities.Account.payments].<elements>)
+             - EntityAttributeFetchImpl(entity=be.pxl.student.entities.Account, querySpaceUid=<gen:2>, path=[be.pxl.student.entities.Account.payments].<elements>.counterAccount)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=be.pxl.student.entities.Account.payments)
+          - SQL table alias mapping - payments0_
+          - alias suffix - 0_
+          - suffixed key columns - {accounti7_2_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_2_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=be.pxl.student.entities.Payment)
+                - SQL table alias mapping - payments0_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_2_1_}
+                - JOIN (JoinDefinedByMetadata(counterAccount)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=be.pxl.student.entities.Account)
+                      - SQL table alias mapping - account1_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_0_2_}
+
+2020-06-14 21:08:00.819 [main] DEBUG org.hibernate.loader.collection.plan.CollectionLoader - Static select for collection be.pxl.student.entities.Account.payments: select payments0_.accountId as accounti7_2_0_, payments0_.Id as id1_2_0_, payments0_.Id as id1_2_1_, payments0_.IBAN as iban2_2_1_, payments0_.accountId as accounti7_2_1_, payments0_.amount as amount3_2_1_, payments0_.counterAccountId as countera8_2_1_, payments0_.currency as currency4_2_1_, payments0_.date as date5_2_1_, payments0_.detail as detail6_2_1_, account1_.id as id1_0_2_, account1_.IBAN as iban2_0_2_, account1_.name as name3_0_2_ from Payment payments0_ left outer join Account account1_ on payments0_.counterAccountId=account1_.id where payments0_.accountId=?
+2020-06-14 21:08:00.843 [main] DEBUG org.hibernate.SQL - drop table if exists Account
+2020-06-14 21:08:00.847 [main] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@355c94be] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2020-06-14 21:08:00.873 [main] DEBUG org.hibernate.SQL - drop table if exists Label
+2020-06-14 21:08:00.881 [main] DEBUG org.hibernate.SQL - drop table if exists Payment
+2020-06-14 21:08:00.894 [main] DEBUG org.hibernate.SQL - create table Account (id integer not null auto_increment, IBAN varchar(255), name varchar(45), primary key (id)) type=MyISAM
+2020-06-14 21:08:00.897 [main] INFO  org.hibernate.orm.connections.access - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@12f49ca8] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2020-06-14 21:08:00.906 [main] WARN  org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "create table Account (id integer not null auto_increment, IBAN varchar(255), name varchar(45), primary key (id)) type=MyISAM" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table Account (id integer not null auto_increment, IBAN varchar(255), name varchar(45), primary key (id)) type=MyISAM" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:439) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:423) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:314) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:166) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:135) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:121) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:156) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1237) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:56) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:79) [javax.persistence-api-2.2.jar:2.2]
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:54) [javax.persistence-api-2.2.jar:2.2]
+	at be.pxl.student.BudgetPlanner.insertIntoDatabase(BudgetPlanner.java:41) [classes/:?]
+	at be.pxl.student.BudgetPlanner.main(BudgetPlanner.java:32) [classes/:?]
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=MyISAM' at line 1
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.Util.getInstance(Util.java:408) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2491) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2449) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.StatementImpl.executeInternal(StatementImpl.java:845) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:745) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	... 16 more
+2020-06-14 21:08:00.916 [main] DEBUG org.hibernate.SQL - create table Label (id integer not null auto_increment, description varchar(255), name varchar(45), primary key (id)) type=MyISAM
+2020-06-14 21:08:00.920 [main] WARN  org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "create table Label (id integer not null auto_increment, description varchar(255), name varchar(45), primary key (id)) type=MyISAM" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table Label (id integer not null auto_increment, description varchar(255), name varchar(45), primary key (id)) type=MyISAM" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:439) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:423) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:314) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:166) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:135) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:121) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:156) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1237) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:56) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:79) [javax.persistence-api-2.2.jar:2.2]
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:54) [javax.persistence-api-2.2.jar:2.2]
+	at be.pxl.student.BudgetPlanner.insertIntoDatabase(BudgetPlanner.java:41) [classes/:?]
+	at be.pxl.student.BudgetPlanner.main(BudgetPlanner.java:32) [classes/:?]
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=MyISAM' at line 1
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.Util.getInstance(Util.java:408) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2491) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2449) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.StatementImpl.executeInternal(StatementImpl.java:845) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:745) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	... 16 more
+2020-06-14 21:08:00.921 [main] DEBUG org.hibernate.SQL - create table Payment (Id integer not null auto_increment, IBAN varchar(255), amount float not null, currency varchar(45), date datetime, detail varchar(255), accountId integer, counterAccountId integer, primary key (Id)) type=MyISAM
+2020-06-14 21:08:00.924 [main] WARN  org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "create table Payment (Id integer not null auto_increment, IBAN varchar(255), amount float not null, currency varchar(45), date datetime, detail varchar(255), accountId integer, counterAccountId integer, primary key (Id)) type=MyISAM" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table Payment (Id integer not null auto_increment, IBAN varchar(255), amount float not null, currency varchar(45), date datetime, detail varchar(255), accountId integer, counterAccountId integer, primary key (Id)) type=MyISAM" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:439) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:423) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:314) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:166) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:135) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:121) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:156) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1237) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:56) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:79) [javax.persistence-api-2.2.jar:2.2]
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:54) [javax.persistence-api-2.2.jar:2.2]
+	at be.pxl.student.BudgetPlanner.insertIntoDatabase(BudgetPlanner.java:41) [classes/:?]
+	at be.pxl.student.BudgetPlanner.main(BudgetPlanner.java:32) [classes/:?]
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'type=MyISAM' at line 1
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.Util.getInstance(Util.java:408) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2491) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2449) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.StatementImpl.executeInternal(StatementImpl.java:845) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:745) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	... 16 more
+2020-06-14 21:08:00.925 [main] DEBUG org.hibernate.SQL - alter table Payment add constraint FK7p81wyqajg0nevdd6vnbav1po foreign key (accountId) references Account (id)
+2020-06-14 21:08:00.929 [main] WARN  org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table Payment add constraint FK7p81wyqajg0nevdd6vnbav1po foreign key (accountId) references Account (id)" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table Payment add constraint FK7p81wyqajg0nevdd6vnbav1po foreign key (accountId) references Account (id)" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:439) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:423) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:374) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:166) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:135) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:121) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:156) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1237) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:56) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:79) [javax.persistence-api-2.2.jar:2.2]
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:54) [javax.persistence-api-2.2.jar:2.2]
+	at be.pxl.student.BudgetPlanner.insertIntoDatabase(BudgetPlanner.java:41) [classes/:?]
+	at be.pxl.student.BudgetPlanner.main(BudgetPlanner.java:32) [classes/:?]
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'budgetplanner.Payment' doesn't exist
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.Util.getInstance(Util.java:408) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2491) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2449) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.StatementImpl.executeInternal(StatementImpl.java:845) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:745) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	... 16 more
+2020-06-14 21:08:00.930 [main] DEBUG org.hibernate.SQL - alter table Payment add constraint FKtd7v9axuwulmgdcuy7w5rqvxv foreign key (counterAccountId) references Account (id)
+2020-06-14 21:08:00.934 [main] WARN  org.hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "alter table Payment add constraint FKtd7v9axuwulmgdcuy7w5rqvxv foreign key (counterAccountId) references Account (id)" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table Payment add constraint FKtd7v9axuwulmgdcuy7w5rqvxv foreign key (counterAccountId) references Account (id)" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:439) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:423) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:374) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:166) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:135) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:121) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:156) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:314) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1237) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:56) [hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:79) [javax.persistence-api-2.2.jar:2.2]
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:54) [javax.persistence-api-2.2.jar:2.2]
+	at be.pxl.student.BudgetPlanner.insertIntoDatabase(BudgetPlanner.java:41) [classes/:?]
+	at be.pxl.student.BudgetPlanner.main(BudgetPlanner.java:32) [classes/:?]
+Caused by: com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'budgetplanner.Payment' doesn't exist
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.Util.getInstance(Util.java:408) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:944) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3978) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3914) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2491) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2449) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.StatementImpl.executeInternal(StatementImpl.java:845) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at com.mysql.jdbc.StatementImpl.execute(StatementImpl.java:745) ~[mysql-connector-java-5.1.47.jar:5.1.47]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.12.Final.jar:5.4.12.Final]
+	... 16 more
+2020-06-14 21:08:00.938 [main] DEBUG org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+2020-06-14 21:08:00.939 [main] DEBUG org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+2020-06-14 21:08:00.942 [main] DEBUG org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-14 21:08:00.942 [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-14 21:08:00.943 [main] DEBUG org.hibernate.query.spi.NamedQueryRepository - Checking 5 named HQL queries
+2020-06-14 21:08:00.943 [main] DEBUG org.hibernate.query.spi.NamedQueryRepository - Checking named query: getAllPayments
+2020-06-14 21:08:00.947 [main] DEBUG org.hibernate.stat.internal.StatisticsInitiator - Statistics initialized [enabled=false]
+2020-06-14 21:08:00.956 [main] DEBUG org.hibernate.hql.internal.QueryTranslatorFactoryInitiator - QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@6a1d6ef2
+2020-06-14 21:08:00.976 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - parse() - HQL: SELECT p FROM be.pxl.student.entities.Payment p
+2020-06-14 21:08:00.980 [main] DEBUG org.hibernate.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+2020-06-14 21:08:00.986 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'FROM'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[DOT] Node: '.'
+       |     |  |  |  |  +-[IDENT] Node: 'be'
+       |     |  |  |  |  \-[IDENT] Node: 'pxl'
+       |     |  |  |  \-[IDENT] Node: 'student'
+       |     |  |  \-[IDENT] Node: 'entities'
+       |     |  \-[IDENT] Node: 'Payment'
+       |     \-[ALIAS] Node: 'p'
+       \-[SELECT] Node: 'SELECT'
+          \-[IDENT] Node: 'p'
+
+2020-06-14 21:08:01.000 [main] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select << begin [level=1, statement=select]
+2020-06-14 21:08:01.008 [main] DEBUG org.hibernate.hql.internal.ast.tree.FromElement - FromClause{level=1} : be.pxl.student.entities.Payment (p) -> payment0_
+2020-06-14 21:08:01.009 [main] DEBUG org.hibernate.hql.internal.ast.tree.FromReferenceNode - Resolved : p -> payment0_.Id
+2020-06-14 21:08:01.010 [main] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+2020-06-14 21:08:01.010 [main] DEBUG org.hibernate.hql.internal.ast.HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} payment0_.Id ) ( FromClause{level=1} Payment payment0_ ) )
+2020-06-14 21:08:01.015 [main] DEBUG org.hibernate.hql.internal.ast.util.JoinProcessor - Tables referenced from query nodes:
+ \-QueryNode
+    +-SelectClause
+    | referencedTables(entity Payment): [Payment]
+    |  +-IdentNode
+    |  | persister: SingleTableEntityPersister(be.pxl.student.entities.Payment)
+    |  | originalText: p
+    |  \-SqlFragment
+    \-FromClause
+       \-FromElement
+
+2020-06-14 21:08:01.017 [main] DEBUG org.hibernate.hql.internal.ast.util.JoinProcessor - Using FROM fragment [Payment payment0_]
+2020-06-14 21:08:01.017 [main] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select >> end [level=1, statement=select]
+2020-06-14 21:08:01.018 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (Payment)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'payment0_.Id as id1_2_' {alias=p, className=be.pxl.student.entities.Payment, tableAlias=payment0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'payment0_.IBAN as iban2_2_, payment0_.accountId as accounti7_2_, payment0_.amount as amount3_2_, payment0_.counterAccountId as countera8_2_, payment0_.currency as currency4_2_, payment0_.date as date5_2_, payment0_.detail as detail6_2_'
+    \-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[p], fromElementByTableAlias=[payment0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'Payment payment0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=p,role=null,tableName=Payment,tableAlias=payment0_,origin=null,columns={,className=be.pxl.student.entities.Payment}}
+
+2020-06-14 21:08:01.018 [main] DEBUG org.hibernate.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+2020-06-14 21:08:01.022 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - HQL: SELECT p FROM be.pxl.student.entities.Payment p
+2020-06-14 21:08:01.022 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - SQL: select payment0_.Id as id1_2_, payment0_.IBAN as iban2_2_, payment0_.accountId as accounti7_2_, payment0_.amount as amount3_2_, payment0_.counterAccountId as countera8_2_, payment0_.currency as currency4_2_, payment0_.date as date5_2_, payment0_.detail as detail6_2_ from Payment payment0_
+2020-06-14 21:08:01.023 [main] DEBUG org.hibernate.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+2020-06-14 21:08:01.025 [main] DEBUG org.hibernate.query.spi.NamedQueryRepository - Checking named query: getByName
+2020-06-14 21:08:01.025 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - parse() - HQL: SELECT a FROM be.pxl.student.entities.Account a WHERE a.name = :name
+2020-06-14 21:08:01.026 [main] DEBUG org.hibernate.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+2020-06-14 21:08:01.027 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  +-[FROM] Node: 'FROM'
+    |  |  \-[RANGE] Node: 'RANGE'
+    |  |     +-[DOT] Node: '.'
+    |  |     |  +-[DOT] Node: '.'
+    |  |     |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  +-[IDENT] Node: 'be'
+    |  |     |  |  |  |  \-[IDENT] Node: 'pxl'
+    |  |     |  |  |  \-[IDENT] Node: 'student'
+    |  |     |  |  \-[IDENT] Node: 'entities'
+    |  |     |  \-[IDENT] Node: 'Account'
+    |  |     \-[ALIAS] Node: 'a'
+    |  \-[SELECT] Node: 'SELECT'
+    |     \-[IDENT] Node: 'a'
+    \-[WHERE] Node: 'WHERE'
+       \-[EQ] Node: '='
+          +-[DOT] Node: '.'
+          |  +-[IDENT] Node: 'a'
+          |  \-[IDENT] Node: 'name'
+          \-[COLON] Node: ':'
+             \-[IDENT] Node: 'name'
+
+2020-06-14 21:08:01.027 [main] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select << begin [level=1, statement=select]
+2020-06-14 21:08:01.028 [main] DEBUG org.hibernate.hql.internal.ast.tree.FromElement - FromClause{level=1} : be.pxl.student.entities.Account (a) -> account0_
+2020-06-14 21:08:01.028 [main] DEBUG org.hibernate.hql.internal.ast.tree.FromReferenceNode - Resolved : a -> account0_.id
+2020-06-14 21:08:01.029 [main] DEBUG org.hibernate.hql.internal.ast.tree.FromReferenceNode - Resolved : a -> account0_.id
+2020-06-14 21:08:01.030 [main] DEBUG org.hibernate.hql.internal.ast.tree.DotNode - getDataType() : name -> org.hibernate.type.StringType@6f2cb653
+2020-06-14 21:08:01.031 [main] DEBUG org.hibernate.hql.internal.ast.tree.FromReferenceNode - Resolved : a.name -> account0_.name
+2020-06-14 21:08:01.032 [main] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+2020-06-14 21:08:01.032 [main] DEBUG org.hibernate.hql.internal.ast.HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} account0_.id ) ( FromClause{level=1} Account account0_ ) ( WHERE ( = ( account0_.name account0_.id name ) ? ) ) )
+2020-06-14 21:08:01.033 [main] DEBUG org.hibernate.hql.internal.ast.util.JoinProcessor - Tables referenced from query nodes:
+ \-QueryNode
+    +-SelectClause
+    | referencedTables(entity Account): [Account]
+    |  +-IdentNode
+    |  | persister: SingleTableEntityPersister(be.pxl.student.entities.Account)
+    |  | originalText: a
+    |  \-SqlFragment
+    +-FromClause
+    |  \-FromElement
+    \-SqlNode
+       \-BinaryLogicOperatorNode
+          +-DotNode
+          | persister: SingleTableEntityPersister(be.pxl.student.entities.Account)
+          | path: a.name
+          |  +-IdentNode
+          |  | persister: SingleTableEntityPersister(be.pxl.student.entities.Account)
+          |  | originalText: a
+          |  \-IdentNode
+          |    persister: null
+          |    originalText: name
+          \-ParameterNode
+
+2020-06-14 21:08:01.033 [main] DEBUG org.hibernate.hql.internal.ast.util.JoinProcessor - Using FROM fragment [Account account0_]
+2020-06-14 21:08:01.033 [main] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select >> end [level=1, statement=select]
+2020-06-14 21:08:01.034 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (Account)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'account0_.id as id1_0_' {alias=a, className=be.pxl.student.entities.Account, tableAlias=account0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'account0_.IBAN as iban2_0_, account0_.name as name3_0_'
+    +-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[a], fromElementByTableAlias=[account0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'Account account0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=a,role=null,tableName=Account,tableAlias=account0_,origin=null,columns={,className=be.pxl.student.entities.Account}}
+    \-[WHERE] SqlNode: 'WHERE'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'account0_.name' {propertyName=name,dereferenceType=PRIMITIVE,getPropertyPath=name,path=a.name,tableAlias=account0_,className=be.pxl.student.entities.Account,classAlias=a}
+          |  +-[ALIAS_REF] IdentNode: 'account0_.id' {alias=a, className=be.pxl.student.entities.Account, tableAlias=account0_}
+          |  \-[IDENT] IdentNode: 'name' {originalText=name}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=name, expectedType=org.hibernate.type.StringType@6f2cb653}
+
+2020-06-14 21:08:01.034 [main] DEBUG org.hibernate.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+2020-06-14 21:08:01.034 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - HQL: SELECT a FROM be.pxl.student.entities.Account a WHERE a.name = :name
+2020-06-14 21:08:01.034 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - SQL: select account0_.id as id1_0_, account0_.IBAN as iban2_0_, account0_.name as name3_0_ from Account account0_ where account0_.name=?
+2020-06-14 21:08:01.034 [main] DEBUG org.hibernate.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+2020-06-14 21:08:01.036 [main] DEBUG org.hibernate.query.spi.NamedQueryRepository - Checking named query: getByNameOrIban
+2020-06-14 21:08:01.036 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - parse() - HQL: SELECT a FROM be.pxl.student.entities.Account a WHERE (a.name = :name OR a.IBAN = :iban)
+2020-06-14 21:08:01.037 [main] DEBUG org.hibernate.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+2020-06-14 21:08:01.037 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  +-[FROM] Node: 'FROM'
+    |  |  \-[RANGE] Node: 'RANGE'
+    |  |     +-[DOT] Node: '.'
+    |  |     |  +-[DOT] Node: '.'
+    |  |     |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  +-[IDENT] Node: 'be'
+    |  |     |  |  |  |  \-[IDENT] Node: 'pxl'
+    |  |     |  |  |  \-[IDENT] Node: 'student'
+    |  |     |  |  \-[IDENT] Node: 'entities'
+    |  |     |  \-[IDENT] Node: 'Account'
+    |  |     \-[ALIAS] Node: 'a'
+    |  \-[SELECT] Node: 'SELECT'
+    |     \-[IDENT] Node: 'a'
+    \-[WHERE] Node: 'WHERE'
+       \-[OR] Node: 'OR'
+          +-[EQ] Node: '='
+          |  +-[DOT] Node: '.'
+          |  |  +-[IDENT] Node: 'a'
+          |  |  \-[IDENT] Node: 'name'
+          |  \-[COLON] Node: ':'
+          |     \-[IDENT] Node: 'name'
+          \-[EQ] Node: '='
+             +-[DOT] Node: '.'
+             |  +-[IDENT] Node: 'a'
+             |  \-[IDENT] Node: 'IBAN'
+             \-[COLON] Node: ':'
+                \-[IDENT] Node: 'iban'
+
+2020-06-14 21:08:01.038 [main] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select << begin [level=1, statement=select]
+2020-06-14 21:08:01.038 [main] DEBUG org.hibernate.hql.internal.ast.tree.FromElement - FromClause{level=1} : be.pxl.student.entities.Account (a) -> account0_
+2020-06-14 21:08:01.038 [main] DEBUG org.hibernate.hql.internal.ast.tree.FromReferenceNode - Resolved : a -> account0_.id
+2020-06-14 21:08:01.038 [main] DEBUG org.hibernate.hql.internal.ast.tree.FromReferenceNode - Resolved : a -> account0_.id
+2020-06-14 21:08:01.038 [main] DEBUG org.hibernate.hql.internal.ast.tree.DotNode - getDataType() : name -> org.hibernate.type.StringType@6f2cb653
+2020-06-14 21:08:01.039 [main] DEBUG org.hibernate.hql.internal.ast.tree.FromReferenceNode - Resolved : a.name -> account0_.name
+2020-06-14 21:08:01.039 [main] DEBUG org.hibernate.hql.internal.ast.tree.FromReferenceNode - Resolved : a -> account0_.id
+2020-06-14 21:08:01.039 [main] DEBUG org.hibernate.hql.internal.ast.tree.DotNode - getDataType() : IBAN -> org.hibernate.type.StringType@6f2cb653
+2020-06-14 21:08:01.039 [main] DEBUG org.hibernate.hql.internal.ast.tree.FromReferenceNode - Resolved : a.IBAN -> account0_.IBAN
+2020-06-14 21:08:01.039 [main] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+2020-06-14 21:08:01.039 [main] DEBUG org.hibernate.hql.internal.ast.HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} account0_.id ) ( FromClause{level=1} Account account0_ ) ( WHERE ( OR ( = ( account0_.name account0_.id name ) ? ) ( = ( account0_.IBAN account0_.id IBAN ) ? ) ) ) )
+2020-06-14 21:08:01.040 [main] DEBUG org.hibernate.hql.internal.ast.util.JoinProcessor - Tables referenced from query nodes:
+ \-QueryNode
+    +-SelectClause
+    | referencedTables(entity Account): [Account]
+    |  +-IdentNode
+    |  | persister: SingleTableEntityPersister(be.pxl.student.entities.Account)
+    |  | originalText: a
+    |  \-SqlFragment
+    +-FromClause
+    |  \-FromElement
+    \-SqlNode
+       \-SqlNode
+          +-BinaryLogicOperatorNode
+          |  +-DotNode
+          |  | persister: SingleTableEntityPersister(be.pxl.student.entities.Account)
+          |  | path: a.name
+          |  |  +-IdentNode
+          |  |  | persister: SingleTableEntityPersister(be.pxl.student.entities.Account)
+          |  |  | originalText: a
+          |  |  \-IdentNode
+          |  |    persister: null
+          |  |    originalText: name
+          |  \-ParameterNode
+          \-BinaryLogicOperatorNode
+             +-DotNode
+             | persister: SingleTableEntityPersister(be.pxl.student.entities.Account)
+             | path: a.IBAN
+             |  +-IdentNode
+             |  | persister: SingleTableEntityPersister(be.pxl.student.entities.Account)
+             |  | originalText: a
+             |  \-IdentNode
+             |    persister: null
+             |    originalText: IBAN
+             \-ParameterNode
+
+2020-06-14 21:08:01.040 [main] DEBUG org.hibernate.hql.internal.ast.util.JoinProcessor - Using FROM fragment [Account account0_]
+2020-06-14 21:08:01.040 [main] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select >> end [level=1, statement=select]
+2020-06-14 21:08:01.040 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (Account)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'account0_.id as id1_0_' {alias=a, className=be.pxl.student.entities.Account, tableAlias=account0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'account0_.IBAN as iban2_0_, account0_.name as name3_0_'
+    +-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[a], fromElementByTableAlias=[account0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'Account account0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=a,role=null,tableName=Account,tableAlias=account0_,origin=null,columns={,className=be.pxl.student.entities.Account}}
+    \-[WHERE] SqlNode: 'WHERE'
+       \-[OR] SqlNode: 'OR'
+          +-[EQ] BinaryLogicOperatorNode: '='
+          |  +-[DOT] DotNode: 'account0_.name' {propertyName=name,dereferenceType=PRIMITIVE,getPropertyPath=name,path=a.name,tableAlias=account0_,className=be.pxl.student.entities.Account,classAlias=a}
+          |  |  +-[ALIAS_REF] IdentNode: 'account0_.id' {alias=a, className=be.pxl.student.entities.Account, tableAlias=account0_}
+          |  |  \-[IDENT] IdentNode: 'name' {originalText=name}
+          |  \-[NAMED_PARAM] ParameterNode: '?' {name=name, expectedType=org.hibernate.type.StringType@6f2cb653}
+          \-[EQ] BinaryLogicOperatorNode: '='
+             +-[DOT] DotNode: 'account0_.IBAN' {propertyName=IBAN,dereferenceType=PRIMITIVE,getPropertyPath=IBAN,path=a.IBAN,tableAlias=account0_,className=be.pxl.student.entities.Account,classAlias=a}
+             |  +-[ALIAS_REF] IdentNode: 'account0_.id' {alias=a, className=be.pxl.student.entities.Account, tableAlias=account0_}
+             |  \-[IDENT] IdentNode: 'IBAN' {originalText=IBAN}
+             \-[NAMED_PARAM] ParameterNode: '?' {name=iban, expectedType=org.hibernate.type.StringType@6f2cb653}
+
+2020-06-14 21:08:01.041 [main] DEBUG org.hibernate.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+2020-06-14 21:08:01.041 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - HQL: SELECT a FROM be.pxl.student.entities.Account a WHERE (a.name = :name OR a.IBAN = :iban)
+2020-06-14 21:08:01.041 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - SQL: select account0_.id as id1_0_, account0_.IBAN as iban2_0_, account0_.name as name3_0_ from Account account0_ where account0_.name=? or account0_.IBAN=?
+2020-06-14 21:08:01.041 [main] DEBUG org.hibernate.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+2020-06-14 21:08:01.041 [main] DEBUG org.hibernate.query.spi.NamedQueryRepository - Checking named query: findAll
+2020-06-14 21:08:01.041 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - parse() - HQL: SELECT a FROM be.pxl.student.entities.Account as a
+2020-06-14 21:08:01.042 [main] DEBUG org.hibernate.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+2020-06-14 21:08:01.042 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'FROM'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[DOT] Node: '.'
+       |     |  |  |  |  +-[IDENT] Node: 'be'
+       |     |  |  |  |  \-[IDENT] Node: 'pxl'
+       |     |  |  |  \-[IDENT] Node: 'student'
+       |     |  |  \-[IDENT] Node: 'entities'
+       |     |  \-[IDENT] Node: 'Account'
+       |     \-[ALIAS] Node: 'a'
+       \-[SELECT] Node: 'SELECT'
+          \-[IDENT] Node: 'a'
+
+2020-06-14 21:08:01.042 [main] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select << begin [level=1, statement=select]
+2020-06-14 21:08:01.043 [main] DEBUG org.hibernate.hql.internal.ast.tree.FromElement - FromClause{level=1} : be.pxl.student.entities.Account (a) -> account0_
+2020-06-14 21:08:01.043 [main] DEBUG org.hibernate.hql.internal.ast.tree.FromReferenceNode - Resolved : a -> account0_.id
+2020-06-14 21:08:01.043 [main] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+2020-06-14 21:08:01.043 [main] DEBUG org.hibernate.hql.internal.ast.HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} account0_.id ) ( FromClause{level=1} Account account0_ ) )
+2020-06-14 21:08:01.044 [main] DEBUG org.hibernate.hql.internal.ast.util.JoinProcessor - Tables referenced from query nodes:
+ \-QueryNode
+    +-SelectClause
+    | referencedTables(entity Account): [Account]
+    |  +-IdentNode
+    |  | persister: SingleTableEntityPersister(be.pxl.student.entities.Account)
+    |  | originalText: a
+    |  \-SqlFragment
+    \-FromClause
+       \-FromElement
+
+2020-06-14 21:08:01.044 [main] DEBUG org.hibernate.hql.internal.ast.util.JoinProcessor - Using FROM fragment [Account account0_]
+2020-06-14 21:08:01.044 [main] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select >> end [level=1, statement=select]
+2020-06-14 21:08:01.044 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (Account)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'account0_.id as id1_0_' {alias=a, className=be.pxl.student.entities.Account, tableAlias=account0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'account0_.IBAN as iban2_0_, account0_.name as name3_0_'
+    \-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[a], fromElementByTableAlias=[account0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'Account account0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=a,role=null,tableName=Account,tableAlias=account0_,origin=null,columns={,className=be.pxl.student.entities.Account}}
+
+2020-06-14 21:08:01.044 [main] DEBUG org.hibernate.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+2020-06-14 21:08:01.044 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - HQL: SELECT a FROM be.pxl.student.entities.Account as a
+2020-06-14 21:08:01.044 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - SQL: select account0_.id as id1_0_, account0_.IBAN as iban2_0_, account0_.name as name3_0_ from Account account0_
+2020-06-14 21:08:01.044 [main] DEBUG org.hibernate.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+2020-06-14 21:08:01.044 [main] DEBUG org.hibernate.query.spi.NamedQueryRepository - Checking named query: getByIBAN
+2020-06-14 21:08:01.045 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - parse() - HQL: SELECT a FROM be.pxl.student.entities.Account a WHERE a.IBAN = :iban
+2020-06-14 21:08:01.045 [main] DEBUG org.hibernate.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+2020-06-14 21:08:01.045 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  +-[FROM] Node: 'FROM'
+    |  |  \-[RANGE] Node: 'RANGE'
+    |  |     +-[DOT] Node: '.'
+    |  |     |  +-[DOT] Node: '.'
+    |  |     |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  +-[IDENT] Node: 'be'
+    |  |     |  |  |  |  \-[IDENT] Node: 'pxl'
+    |  |     |  |  |  \-[IDENT] Node: 'student'
+    |  |     |  |  \-[IDENT] Node: 'entities'
+    |  |     |  \-[IDENT] Node: 'Account'
+    |  |     \-[ALIAS] Node: 'a'
+    |  \-[SELECT] Node: 'SELECT'
+    |     \-[IDENT] Node: 'a'
+    \-[WHERE] Node: 'WHERE'
+       \-[EQ] Node: '='
+          +-[DOT] Node: '.'
+          |  +-[IDENT] Node: 'a'
+          |  \-[IDENT] Node: 'IBAN'
+          \-[COLON] Node: ':'
+             \-[IDENT] Node: 'iban'
+
+2020-06-14 21:08:01.045 [main] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select << begin [level=1, statement=select]
+2020-06-14 21:08:01.046 [main] DEBUG org.hibernate.hql.internal.ast.tree.FromElement - FromClause{level=1} : be.pxl.student.entities.Account (a) -> account0_
+2020-06-14 21:08:01.046 [main] DEBUG org.hibernate.hql.internal.ast.tree.FromReferenceNode - Resolved : a -> account0_.id
+2020-06-14 21:08:01.046 [main] DEBUG org.hibernate.hql.internal.ast.tree.FromReferenceNode - Resolved : a -> account0_.id
+2020-06-14 21:08:01.046 [main] DEBUG org.hibernate.hql.internal.ast.tree.DotNode - getDataType() : IBAN -> org.hibernate.type.StringType@6f2cb653
+2020-06-14 21:08:01.046 [main] DEBUG org.hibernate.hql.internal.ast.tree.FromReferenceNode - Resolved : a.IBAN -> account0_.IBAN
+2020-06-14 21:08:01.046 [main] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+2020-06-14 21:08:01.046 [main] DEBUG org.hibernate.hql.internal.ast.HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} account0_.id ) ( FromClause{level=1} Account account0_ ) ( WHERE ( = ( account0_.IBAN account0_.id IBAN ) ? ) ) )
+2020-06-14 21:08:01.047 [main] DEBUG org.hibernate.hql.internal.ast.util.JoinProcessor - Tables referenced from query nodes:
+ \-QueryNode
+    +-SelectClause
+    | referencedTables(entity Account): [Account]
+    |  +-IdentNode
+    |  | persister: SingleTableEntityPersister(be.pxl.student.entities.Account)
+    |  | originalText: a
+    |  \-SqlFragment
+    +-FromClause
+    |  \-FromElement
+    \-SqlNode
+       \-BinaryLogicOperatorNode
+          +-DotNode
+          | persister: SingleTableEntityPersister(be.pxl.student.entities.Account)
+          | path: a.IBAN
+          |  +-IdentNode
+          |  | persister: SingleTableEntityPersister(be.pxl.student.entities.Account)
+          |  | originalText: a
+          |  \-IdentNode
+          |    persister: null
+          |    originalText: IBAN
+          \-ParameterNode
+
+2020-06-14 21:08:01.047 [main] DEBUG org.hibernate.hql.internal.ast.util.JoinProcessor - Using FROM fragment [Account account0_]
+2020-06-14 21:08:01.047 [main] DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker - select >> end [level=1, statement=select]
+2020-06-14 21:08:01.047 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (Account)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'account0_.id as id1_0_' {alias=a, className=be.pxl.student.entities.Account, tableAlias=account0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'account0_.IBAN as iban2_0_, account0_.name as name3_0_'
+    +-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[a], fromElementByTableAlias=[account0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'Account account0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=a,role=null,tableName=Account,tableAlias=account0_,origin=null,columns={,className=be.pxl.student.entities.Account}}
+    \-[WHERE] SqlNode: 'WHERE'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'account0_.IBAN' {propertyName=IBAN,dereferenceType=PRIMITIVE,getPropertyPath=IBAN,path=a.IBAN,tableAlias=account0_,className=be.pxl.student.entities.Account,classAlias=a}
+          |  +-[ALIAS_REF] IdentNode: 'account0_.id' {alias=a, className=be.pxl.student.entities.Account, tableAlias=account0_}
+          |  \-[IDENT] IdentNode: 'IBAN' {originalText=IBAN}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=iban, expectedType=org.hibernate.type.StringType@6f2cb653}
+
+2020-06-14 21:08:01.047 [main] DEBUG org.hibernate.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+2020-06-14 21:08:01.047 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - HQL: SELECT a FROM be.pxl.student.entities.Account a WHERE a.IBAN = :iban
+2020-06-14 21:08:01.047 [main] DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl - SQL: select account0_.id as id1_0_, account0_.IBAN as iban2_0_, account0_.name as name3_0_ from Account account0_ where account0_.IBAN=?
+2020-06-14 21:08:01.047 [main] DEBUG org.hibernate.hql.internal.ast.ErrorTracker - throwQueryException() : no errors
+2020-06-14 21:08:01.048 [main] DEBUG org.hibernate.query.spi.NamedQueryRepository - Checking 0 named SQL queries
+2020-06-14 21:08:01.054 [main] DEBUG org.hibernate.internal.SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@32d5279
+2020-06-14 21:08:01.056 [main] DEBUG org.hibernate.internal.SessionFactoryRegistry - Registering SessionFactory: d62cd19c-1fe1-4b66-b6fa-f649e243ef0e (<unnamed>)
+2020-06-14 21:08:01.056 [main] DEBUG org.hibernate.internal.SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured

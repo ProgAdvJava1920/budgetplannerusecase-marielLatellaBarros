@@ -21,8 +21,10 @@ public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    @Column(length = 34)
+
+    @Column(length = 34, unique = true)
     private String IBAN;
+
     @Column(length = 45)
     private String name;
 
