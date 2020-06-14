@@ -7,16 +7,22 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class AccountRepositoryImplTest {
     DAO<Account, AccountException> repository;
+    EntityManager entityManager;
 
     @BeforeEach
     void setUp() {
         repository = new AccountRepositoryImpl();
+        EntityManagerFactory entityManagerFactory =  Persistence.createEntityManagerFactory("budgetplanner_test");
+        entityManager = entityManagerFactory.createEntityManager();
     }
 
     @AfterEach

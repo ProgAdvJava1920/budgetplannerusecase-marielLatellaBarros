@@ -17,6 +17,10 @@ public class AccountRepositoryImpl implements DAO<Account, AccountException> {
 
     private EntityManager entityManager;
 
+    public AccountRepositoryImpl(){
+
+    }
+
     public AccountRepositoryImpl(EntityManager em) {
         this.entityManager = em;
     }
