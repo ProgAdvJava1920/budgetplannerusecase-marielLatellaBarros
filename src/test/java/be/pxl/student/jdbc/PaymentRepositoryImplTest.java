@@ -1,7 +1,5 @@
-package be.pxl.student.entity;
+package be.pxl.student.jdbc;
 
-import jdbc.DAOManager;
-import jdbc.PaymentRepositoryImpl;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -10,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 
 public class PaymentRepositoryImplTest {
-    private static final String DB_URL = "jdbc:h2:mem:test;MODE=MySQL;INIT=RUNSCRIPT FROM 'classpath:BudgetPlannerTest.sql'";
+    private static final String DB_URL = "be.pxl.student.jdbc:h2:mem:test;MODE=MySQL;INIT=RUNSCRIPT FROM 'classpath:BudgetPlannerTest.sql'";
 
     DAOManager manager;
     PaymentRepositoryImpl repository;

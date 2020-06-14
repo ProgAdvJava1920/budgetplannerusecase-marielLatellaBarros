@@ -93,7 +93,7 @@
 		<!--		</dependency>-->
 
 <!--		<dependency>-->
-<!--			<groupId>org.mariadb.jdbc</groupId>-->
+<!--			<groupId>org.mariadb.be.pxl.student.jdbc</groupId>-->
 <!--			<artifactId>mariadb-java-client</artifactId>-->
 <!--			<version>2.4.3</version>-->
 <!--		</dependency>-->

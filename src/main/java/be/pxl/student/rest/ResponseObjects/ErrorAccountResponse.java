@@ -1,4 +1,4 @@
-package rest.ResponseObjects;
+package be.pxl.student.rest.ResponseObjects;
 
 public class ErrorAccountResponse {
     private String message;

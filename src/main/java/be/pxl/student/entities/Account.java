@@ -1,4 +1,4 @@
-package entities;
+package be.pxl.student.entities;
 
 import javax.persistence.*;
 import java.util.ArrayList;

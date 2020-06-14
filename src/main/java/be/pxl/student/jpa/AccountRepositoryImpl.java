@@ -1,8 +1,8 @@
-package jpa;
+package be.pxl.student.jpa;
 
-import entities.Account;
+import be.pxl.student.entities.Account;
 import be.pxl.student.DAO;
-import exceptions.AccountException;
+import be.pxl.student.exceptions.AccountException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

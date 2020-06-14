@@ -1,4 +1,4 @@
-package exceptions;
+package be.pxl.student.exceptions;
 
 public class AccountNotFoundException extends AccountException{
     public AccountNotFoundException(String message, Throwable e){

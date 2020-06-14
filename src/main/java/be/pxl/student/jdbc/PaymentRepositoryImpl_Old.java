@@ -1,4 +1,4 @@
-package jdbc;
+package be.pxl.student.jdbc;
 //
 //import be.pxl.student.entity.Payment;
 //

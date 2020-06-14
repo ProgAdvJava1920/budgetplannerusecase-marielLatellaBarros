@@ -1,4 +1,4 @@
-package exceptions;
+package be.pxl.student.exceptions;
 
 public class AccountException extends Exception{
     public AccountException(String message, Throwable e){

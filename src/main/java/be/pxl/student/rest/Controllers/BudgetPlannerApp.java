@@ -1,4 +1,4 @@
-package rest.Controllers;
+package be.pxl.student.rest.Controllers;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;

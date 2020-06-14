@@ -1,8 +1,8 @@
-package jdbc;
+package be.pxl.student.jdbc;
 
-import entities.Payment;
+import be.pxl.student.entities.Payment;
 import be.pxl.student.DAO;
-import exceptions.PaymentException;
+import be.pxl.student.exceptions.PaymentException;
 
 import java.util.List;
 

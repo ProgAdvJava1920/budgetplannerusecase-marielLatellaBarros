@@ -1,4 +1,4 @@
-package jpa;
+package be.pxl.student.jpa;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

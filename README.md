@@ -36,6 +36,6 @@ Per label moet men verrichtingen binnen een bepaalde tijdspanne kunnen opvragen.
 
 Lees het rekeninguittreksel (account_payments.csv) in en maak van iedere regel een Account en Payment object.
 Print de toString van het Account object vervolgens uit via log4j naar console en in een rolling log bestand output.log. Print ook errors en warnings uit via log4j, gebruik dus geen enkel System.out.print... meer.
-De objecten (entities) maak je aan via de reeds meegeven objecten Account en Payment. Deze gaan we later uitbreiden en gebruiken om het database schema aan te maken.
+De objecten (be.pxl.student.entities) maak je aan via de reeds meegeven objecten Account en Payment. Deze gaan we later uitbreiden en gebruiken om het database schema aan te maken.
 
 

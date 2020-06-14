@@ -1,4 +1,4 @@
-package rest.DataTransferObject;
+package be.pxl.student.rest.DataTransferObject;
 
 public class AccountDTO {
 

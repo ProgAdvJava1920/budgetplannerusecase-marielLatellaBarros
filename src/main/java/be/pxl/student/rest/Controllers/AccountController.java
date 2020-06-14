@@ -1,11 +1,11 @@
-package rest.Controllers;
+package be.pxl.student.rest.Controllers;
 
-import rest.DataTransferObject.AccountDTO;
-import entities.Account;
+import be.pxl.student.rest.DataTransferObject.AccountDTO;
+import be.pxl.student.entities.Account;
 import be.pxl.student.DAO;
-import jpa.AccountRepositoryImpl;
-import jpa.EntityManagerUtil;
-import rest.ResponseObjects.ErrorAccountResponse;
+import be.pxl.student.jpa.AccountRepositoryImpl;
+import be.pxl.student.jpa.EntityManagerUtil;
+import be.pxl.student.rest.ResponseObjects.ErrorAccountResponse;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
