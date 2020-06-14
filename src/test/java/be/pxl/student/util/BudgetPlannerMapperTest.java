@@ -1,11 +1,7 @@
 package be.pxl.student.util;
 
-import be.pxl.student.DAO;
 import be.pxl.student.entities.Account;
 import be.pxl.student.entities.Payment;
-import be.pxl.student.exceptions.AccountException;
-import be.pxl.student.jdbc.AccountRepositoryImpl;
-import be.pxl.student.jdbc.DAOManager;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

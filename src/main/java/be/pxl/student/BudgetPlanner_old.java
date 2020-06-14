@@ -17,7 +17,6 @@
 //        bpi.createAccountAndPayments();
 //
 //        AccountRepository accountRepository = new AccountRepositoryImpl();
-//        //TODO: With getById this one does not print
 //        Account account = null;
 //        try {
 //            account = accountRepository.create(bpi.getAccount());
