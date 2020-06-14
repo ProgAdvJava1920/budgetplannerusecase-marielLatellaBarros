@@ -1,5 +1,6 @@
 package be.pxl.student.jdbc;
 
+import be.pxl.student.DAO;
 import be.pxl.student.entities.Account;
 import be.pxl.student.exceptions.AccountException;
 import org.junit.jupiter.api.AfterEach;
@@ -15,7 +16,7 @@ public class AccountRepositoryImplTest {
     private static final String DB_URL = "be.pxl.student.jdbc:h2:mem:test;MODE=MySQL;INIT=RUNSCRIPT FROM 'classpath:BudgetPlannerTest.sql'";
 
     DAOManager manager;
-    AccountRepositoryImpl repository;
+    DAO<Account, AccountException> repository;
 
     @BeforeEach
     void setUp(){
