@@ -14,6 +14,8 @@ public class Payment {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int Id; //PK
 
+
+    private String IBAN;
     @Temporal(TemporalType.TIMESTAMP)
     private Date date;
     private float amount;
@@ -41,7 +43,8 @@ public class Payment {
 
     public Payment() { }
 
-    public Payment(Date date, float amount, String currency, String detail) {
+    public Payment(String IBAN, Date date, float amount, String currency, String detail) {
+        this.IBAN = IBAN;
         this.date = date;
         this.amount = amount;
         this.currency = currency;
@@ -49,6 +52,14 @@ public class Payment {
     }
 
     public int getId() { return Id; }
+
+    public String getIBAN() {
+        return IBAN;
+    }
+
+    public void setIBAN(String IBAN) {
+        this.IBAN = IBAN;
+    }
 
     public Date getDate() {
         return date;
@@ -84,6 +95,7 @@ public class Payment {
     public Account getCounterAccount() { return counterAccount; }
     public void setCounterAccount(Account counterAccount) { this.counterAccount = counterAccount; }
 
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -91,26 +103,27 @@ public class Payment {
         Payment payment = (Payment) o;
         return Id == payment.Id &&
                 Float.compare(payment.amount, amount) == 0 &&
+                Objects.equals(IBAN, payment.IBAN) &&
                 Objects.equals(date, payment.date) &&
                 Objects.equals(currency, payment.currency) &&
-                Objects.equals(detail, payment.detail);
+                Objects.equals(detail, payment.detail) &&
+                Objects.equals(account, payment.account) &&
+                Objects.equals(counterAccount, payment.counterAccount);
     }
+
 
     @Override
     public int hashCode() {
-        return Objects.hash(Id, date, amount, currency, detail);
+        return Objects.hash(Id, IBAN, date, amount, currency, detail, account, counterAccount);
     }
 
     @Override
     public String toString() {
-        return "Payment{" +
-                "Id=" + Id +
-                ", date=" + date +
+        return "{" +
+                "date=" + date +
                 ", amount=" + amount +
                 ", currency='" + currency + '\'' +
                 ", detail='" + detail + '\'' +
-                ", account=" + account +
-                ", counterAccount=" + counterAccount +
                 '}';
     }
 }
