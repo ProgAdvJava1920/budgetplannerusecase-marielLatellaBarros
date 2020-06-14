@@ -1,6 +1,6 @@
 package be.pxl.student.entity;
 
-import Entities.Account;
+import entities.Account;
 import exceptions.AccountException;
 import jdbc.AccountRepositoryImpl;
 import jdbc.DAOManager;

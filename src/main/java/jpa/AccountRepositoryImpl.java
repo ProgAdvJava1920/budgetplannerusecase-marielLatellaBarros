@@ -1,6 +1,6 @@
 package jpa;
 
-import Entities.Account;
+import entities.Account;
 import be.pxl.student.DAO;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -11,12 +11,12 @@ import javax.persistence.NoResultException;
 import javax.persistence.TypedQuery;
 import java.util.List;
 
-public class AccountImpl implements DAO {
-    private static final Logger LOGGER = LogManager.getLogger(AccountImpl.class);
+public class AccountRepositoryImpl implements DAO {
+    private static final Logger LOGGER = LogManager.getLogger(AccountRepositoryImpl.class);
 
     private EntityManager entityManager;
 
-    public AccountImpl(EntityManager em) {
+    public AccountRepositoryImpl(EntityManager em) {
         this.entityManager = em;
     }
 

@@ -1,9 +1,9 @@
 package rest.Controllers;
 
 import rest.DataTransferObject.AccountDTO;
-import Entities.Account;
+import entities.Account;
 import be.pxl.student.DAO;
-import jpa.AccountImpl;
+import jpa.AccountRepositoryImpl;
 import jpa.EntityManagerUtil;
 import rest.ResponseObjects.ErrorAccountResponse;
 import org.apache.logging.log4j.LogManager;
@@ -30,7 +30,7 @@ public class AccountController {
         EntityManager em = EntityManagerUtil.createEntityManager();
 
         try {
-            DAO accountDAO = new AccountImpl(em);
+            DAO accountDAO = new AccountRepositoryImpl(em);
             Account accountFoundInDatabase = accountDAO.getByNameOrIban(mapAccountDTO(accountDTO));
 
             //Account not found in database. Create new account

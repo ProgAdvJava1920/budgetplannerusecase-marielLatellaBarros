@@ -1,6 +1,6 @@
 package jdbc;
 
-import Entities.Payment;
+import entities.Payment;
 import be.pxl.student.DAO;
 import exceptions.PaymentException;
 

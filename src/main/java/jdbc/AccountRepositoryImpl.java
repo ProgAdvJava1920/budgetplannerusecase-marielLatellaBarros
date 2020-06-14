@@ -1,6 +1,6 @@
 package jdbc;
 
-import Entities.Account;
+import entities.Account;
 import be.pxl.student.DAO;
 import exceptions.AccountException;
 import exceptions.AccountNotFoundException;
