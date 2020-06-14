@@ -38,6 +38,12 @@
 		</dependency>
 
 		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.47</version>
+		</dependency>
+
+		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
 			<artifactId>log4j-api</artifactId>
 			<version>${log4j2.version}</version>
@@ -86,11 +92,7 @@
 <!--			<scope>provided</scope>-->
 <!--		</dependency>-->
 
-		<!--		<dependency>-->
-		<!--			<groupId>mysql</groupId>-->
-		<!--			<artifactId>mysql-connector-java</artifactId>-->
-		<!--			<version>5.1.47</version>-->
-		<!--		</dependency>-->
+
 
 <!--		<dependency>-->
 <!--			<groupId>org.mariadb.be.pxl.student.jdbc</groupId>-->

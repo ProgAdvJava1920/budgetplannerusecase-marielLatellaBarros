@@ -176,8 +176,8 @@ public class AccountRepositoryImpl implements DAO<Account, AccountException> {
     }
 
     @Override
-    public boolean update(Account account) throws AccountException {
-        return false;
+    public Account update(Account account) throws AccountException {
+        return null;
     }
 
     @Override

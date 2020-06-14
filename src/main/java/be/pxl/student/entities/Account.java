@@ -25,6 +25,7 @@ public class Account {
     private String IBAN;
     @Column(length = 45)
     private String name;
+
     @OneToMany(mappedBy = "account")
     private List<Payment> payments = new ArrayList<>();
 

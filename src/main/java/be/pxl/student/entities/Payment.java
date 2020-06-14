@@ -2,6 +2,7 @@ package be.pxl.student.entities;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.Objects;
 
 @Entity
 @NamedQueries({
@@ -11,10 +12,8 @@ import java.util.Date;
 public class Payment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int Id; //FK
-    private int accountId;//FK
-    private int counterAccountId;//FK
-    private String IBAN;
+    private int Id; //PK
+
     @Temporal(TemporalType.TIMESTAMP)
     private Date date;
     private float amount;
@@ -22,15 +21,19 @@ public class Payment {
     private String currency;
     private String detail;
 
-//    @JoinColumn(name = "accountId")
-//    @ManyToOne
-//    //@Column(nullable = false)
-//    private Account account;
-//
-//    @JoinColumn(name = "counterAccountId")
-//    @ManyToOne
-//    //@Column(nullable = false)
-//    private Account counterAccount;
+
+    //private int accountId;//FK in database => change name
+    @ManyToOne
+    @JoinColumn(name = "accountId")
+    @Column(nullable = false)
+    private Account account;
+
+    //private int counterAccountId;//FK in database => change name
+    @ManyToOne
+    @JoinColumn(name = "counterAccountId")
+    @Column(nullable = false)
+    private Account counterAccount;
+
 //
 //    @JoinColumn(name = "labelId")
 //    @ManyToOne
@@ -38,8 +41,7 @@ public class Payment {
 
     public Payment() { }
 
-    public Payment(String IBAN, Date date, float amount, String currency, String detail) {
-        this.IBAN = IBAN;
+    public Payment(Date date, float amount, String currency, String detail) {
         this.date = date;
         this.amount = amount;
         this.currency = currency;
@@ -47,30 +49,6 @@ public class Payment {
     }
 
     public int getId() { return Id; }
-
-    public int getAccountId() {
-        return accountId;
-    }
-
-    public void setAccountId(int accountId) {
-        this.accountId = accountId;
-    }
-
-    public int getCounterAccountId() {
-        return counterAccountId;
-    }
-
-    public void setCounterAccountId(int counterAccountId) {
-        this.counterAccountId = counterAccountId;
-    }
-
-    public String getIBAN() {
-        return IBAN;
-    }
-
-    public void setIBAN(String IBAN) {
-        this.IBAN = IBAN;
-    }
 
     public Date getDate() {
         return date;
@@ -100,19 +78,39 @@ public class Payment {
         this.detail = detail;
     }
 
-//    public Account getAccount() { return account; }
-//    public void setAccount(Account account) { this.account = account; }
-//
-//    public Account getCounterAccount() { return counterAccount; }
-//    public void setCounterAccount(Account counterAccount) { this.counterAccount = counterAccount; }
+    public Account getAccount() { return account; }
+    public void setAccount(Account account) { this.account = account; }
+
+    public Account getCounterAccount() { return counterAccount; }
+    public void setCounterAccount(Account counterAccount) { this.counterAccount = counterAccount; }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Payment payment = (Payment) o;
+        return Id == payment.Id &&
+                Float.compare(payment.amount, amount) == 0 &&
+                Objects.equals(date, payment.date) &&
+                Objects.equals(currency, payment.currency) &&
+                Objects.equals(detail, payment.detail);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(Id, date, amount, currency, detail);
+    }
 
     @Override
     public String toString() {
-        return "{" +
-                "date=" + date +
+        return "Payment{" +
+                "Id=" + Id +
+                ", date=" + date +
                 ", amount=" + amount +
                 ", currency='" + currency + '\'' +
                 ", detail='" + detail + '\'' +
+                ", account=" + account +
+                ", counterAccount=" + counterAccount +
                 '}';
     }
 }

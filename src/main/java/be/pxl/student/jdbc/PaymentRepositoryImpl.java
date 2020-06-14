@@ -24,8 +24,8 @@ public class PaymentRepositoryImpl implements DAO<Payment, PaymentException> {
     }
 
     @Override
-    public boolean update(Payment payment) throws PaymentException {
-        return false;
+    public Payment update(Payment payment) throws PaymentException {
+        return null;
     }
 
     @Override
