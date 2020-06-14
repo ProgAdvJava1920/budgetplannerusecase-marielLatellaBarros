@@ -53,7 +53,14 @@ class AccountRepositoryImplTest {
 
     @Test
     void update() throws AccountException{
-        fail("not yet implemented");
+        String updateName = "otherName";
+
+        Account account = repository.getById(1);
+        account.setName(updateName);
+        repository.update(account);
+        entityManager.clear();
+
+        assertEquals(updateName,repository.getById(1).getName());
     }
 
     @Test

@@ -43,8 +43,12 @@ public class AccountRepositoryImpl implements DAO<Account, AccountException> {
     }
 
     @Override
-    public boolean update(Account account) throws AccountException {
-        throw new AccountException(" not yet implemented");
+    public Account update(Account account) throws AccountException {
+        entityManager.getTransaction().begin();
+        entityManager.persist(account);
+        entityManager.getTransaction().commit();
+        return account;
+
     }
 
     public boolean updateAccount(Account account) {
