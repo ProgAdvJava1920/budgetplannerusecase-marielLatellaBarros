@@ -16,17 +16,21 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AccountRepositoryImplTest {
     DAO<Account, AccountException> repository;
+    EntityManagerFactory entityManagerFactory;
     EntityManager entityManager;
 
     @BeforeEach
     void setUp() {
         repository = new AccountRepositoryImpl(entityManager);
-        EntityManagerFactory entityManagerFactory =  Persistence.createEntityManagerFactory("budgetplanner_test");
+        entityManagerFactory =  Persistence.createEntityManagerFactory("budgetplanner_test");
         entityManager = entityManagerFactory.createEntityManager();
     }
 
     @AfterEach
     void tearDown() {
+        entityManager.close();
+        entityManagerFactory.close();
+
     }
 
     @Test

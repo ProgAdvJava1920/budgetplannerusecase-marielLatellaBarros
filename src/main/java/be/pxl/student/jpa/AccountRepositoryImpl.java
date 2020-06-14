@@ -38,7 +38,8 @@ public class AccountRepositoryImpl implements DAO<Account, AccountException> {
 
     @Override
     public List<Account> getAll() throws AccountException {
-        throw new AccountException(" not yet implemented");
+        TypedQuery<Account> query = entityManager.createNamedQuery("findAll", Account.class);
+        return query.getResultList();
     }
 
     @Override

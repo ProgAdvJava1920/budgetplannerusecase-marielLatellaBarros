@@ -7,6 +7,8 @@ import java.util.Objects;
 
 @Entity
 @NamedQueries({
+        @NamedQuery(name="findAll",
+                query = "SELECT a FROM Account as a"),
         @NamedQuery(name="getByIBAN",
                 query = "SELECT a FROM Account a WHERE a.IBAN = :iban"),
         @NamedQuery(name="getByName",
