@@ -34,7 +34,7 @@ public class BudgetPlannerMapper {
         return new ArrayList<>(accountMap.values());
 }
 
-    private Account mapDataLineToAccount(String accountLine) throws BudgetPlannerException, ParseException {
+    public Account mapDataLineToAccount(String accountLine) throws BudgetPlannerException, ParseException {
         String[] items = accountLine.split(",");
 
         if (items.length != CSV_ITEM_COUNT){
@@ -60,8 +60,10 @@ public class BudgetPlannerMapper {
         return DATE_FORMAT.format(date);
     }
 
-    private Payment mapItemsToPayment (String[]items) throws ParseException {
+    public Payment mapItemsToPayment(String[] items) throws ParseException {
         return new Payment(
+                //TODO: item 2 is actually the counterAccount => create counter account
+                //TODO: remove IBAN from entity
                 items[2],                   //IBAN
                 convertToDate(items[3]),    //Transaction date
                 Float.parseFloat(items[4]), // amount

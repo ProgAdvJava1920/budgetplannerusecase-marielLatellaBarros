@@ -14,7 +14,7 @@ public class Payment {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int Id; //PK
 
-
+    //TODO: IBAN belongs to account, Remove and refactor tests, toString, hashCode and Mapper
     private String IBAN;
     @Temporal(TemporalType.TIMESTAMP)
     private Date date;
