@@ -17,10 +17,6 @@ public class AccountRepositoryImpl implements DAO<Account, AccountException> {
 
     private EntityManager entityManager;
 
-    public AccountRepositoryImpl(){
-
-    }
-
     public AccountRepositoryImpl(EntityManager em) {
         this.entityManager = em;
     }
@@ -37,7 +33,7 @@ public class AccountRepositoryImpl implements DAO<Account, AccountException> {
 
     @Override
     public Account getById(int id) throws AccountException {
-        throw new AccountException(" not yet implemented");
+        return entityManager.find(Account.class, id);
     }
 
     @Override

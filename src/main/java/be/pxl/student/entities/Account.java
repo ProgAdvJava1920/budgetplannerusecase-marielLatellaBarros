@@ -17,7 +17,7 @@ import java.util.Objects;
 public class Account {
 
     @Id
-    //@GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @Column(length = 34)
     private String IBAN;

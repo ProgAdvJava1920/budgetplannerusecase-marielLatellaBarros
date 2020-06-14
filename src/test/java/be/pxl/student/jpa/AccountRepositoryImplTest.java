@@ -20,7 +20,7 @@ class AccountRepositoryImplTest {
 
     @BeforeEach
     void setUp() {
-        repository = new AccountRepositoryImpl();
+        repository = new AccountRepositoryImpl(entityManager);
         EntityManagerFactory entityManagerFactory =  Persistence.createEntityManagerFactory("budgetplanner_test");
         entityManager = entityManagerFactory.createEntityManager();
     }
